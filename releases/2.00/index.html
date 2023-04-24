@@ -1,0 +1,3867 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+
+
+
+<head>
+    
+	
+    <meta charset="utf-8" />
+    <title>ADMS Vocabulary</title>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
+
+	var myeditors = [
+	
+	
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Makx Dekkers",
+		      
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Pavlina Fragkou",
+		      
+		      
+		    company: "SEMIC EU",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Natasa Sofou",
+		      
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Bert Van Nuffelen",
+		      
+		      
+		    company: "TenForce",
+		      
+		      
+		    mailto: "bert.van.nuffelen@tenforce.com"
+		      
+		    }
+		
+		
+             
+        
+	
+		]
+
+	var myauthors = [
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Pavlina Fragkou",
+		      
+		      
+		    company: "SEMIC EU",
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+	
+	
+		]
+
+
+   
+
+    var respecConfig = {
+      edDraftURI: "https://semiceu.github.io//ADMS/releases/2.0",
+      latestVersion: "https://www.w3.org/TR/vocab-adms",
+      specStatus: "unofficial",
+      publishDate: "2023-04-05",
+      prevRecURI: "https://www.w3.org/TR/vocab-adms",
+      editors: myeditors,
+      authors: myauthors,
+      github: "SEMICeu/ADMS",
+      shortName: "ADMS Vocabulary",
+      xref: "web-platform",
+      doJsonLd: true,
+      logos: [{
+        src: "https://github.com/SEMICeu/Core-Person-Vocabulary/blob/v2.0.0/releases/2.00/html/semic-icon.png",
+        url: "https://semic.eu",
+        alt: "SEMIC",
+        width: 154,
+        height: 140,
+        id: "semic-logo",
+      },],
+      generatedSubtitle: "",
+      additionalCopyrightHolders: "",
+      localBiblio: {
+        "ISA":{
+           "href":"https://ec.europa.eu/isa/",
+           "title":"Interoperability Solutions for European Public Administrations (ISA)",
+           "publisher":"European Commission"
+          },
+        "ISA2":{
+          "href":"https://ec.europa.eu/isa2/",
+          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
+          "publisher":"European Commission"
+        },
+        "SEMIC":{
+          "href":"https://ec.europa.eu/isa2/actions/improving-semantic-interoperability-european-egovernment-systems_en",
+          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²). Improving semantic interoperability in European eGovernment systems",
+          "publisher":"European Commission"
+         },
+        "DEU" : {
+          "href":"https://data.europa.eu",
+          "title":"The official portal for European data",
+          "publisher":"European Commission"
+        },
+       "ADMS1" : {
+	  "href" : "https://joinup.ec.europa.eu/collection/support-centre/solution/asset-description-metadata-schema-adms/release/100",
+          "title" : "ADMS 1.00, 1ste version of ADMS as defined by the European Commission ISA Programme",
+	  "publisher" : "European Commission"
+	},
+       "WG-GLD" : {
+	  "href" : "http://www.w3.org/2011/gld/",
+          "title" : "Government Linked Data Working Group (Closed community group)",
+          "publisher" : "W3C"
+        },
+       "NAL-FileType" : {
+	  "href" : "http://publications.europa.eu/resource/authority/file-type",
+          "title" : "Named Authority List File Type",
+	  "publisher" : "Publication Office of the EU, EU Vocabularies"
+	},
+       "codelist-adms" : {
+	  "href" : "purl.org/adms/",
+          "title" : "Controlled Vocabularies supporting the ADMS vocabulary.",
+	  "publisher" : "European Commission, Interoperable Europe"
+	}
+
+      }
+    };
+
+
+
+    </script>
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      }
+    </style>
+     
+    <p class="copyright">
+        Copyright © 2022
+    </p>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#7ED956" />
+</head>
+<body>
+    
+
+    <!-- Start page content -->
+
+
+
+<section id="specintro">
+    <h2>
+        Introduction
+    </h2>
+    
+        <p>
+            This document describes a <strong>vocabulary</strong>, in this case <strong>ADMS Vocabulary</strong>. 
+	    A vocabulary is a semantic data specification designed so that the included terms are highly reusable.
+	    The included classes and properties come with a limited set of constraints.
+        </p>
+        <p>
+        ADMS, the Asset Description Metadata Schema, is a vocabulary for describing semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development. 
+        </p>
+
+</section>
+
+
+<section id="abstract">
+    <h2>Motivation for this vocabulary</h2>
+<p>
+Someone searching for a Semantic Asset is likely to have different needs, priorities and expectations than someone searching for a dataset in a data catalog and these differences are reflected in ADMS. 
+In particular, users seeking an Asset are likely to be searching for a document — something they can open and read using familiar desktop software, as opposed to something that needs to be processed. 
+Of course this is a very broad generalization. 
+If a code list is published as a SKOS Concept scheme [[skos-reference]] then it is both an Asset and a dataset offered to be exploited in a data exchange.
+As vocabulary ADMS focusses on the nature of the Assets, rather than on the organisation of the Assets in a catalogue.
+</p><p>
+
+Although ADMS has been designed from the above usage case in mind, some terms are used beyond that use case and operate in a broader context.
+For instance <code>adms:identifier</code> got a wide adoption in various vocabularies such as DCAT-AP [[dcat-ap]] and the SEMIC Core Vocabularies. 
+In this new release of ADMS this usage has been made more visible, by decoupling ADMS in a formal sense from DCAT and restricting the specification to the classes and properties defined in the ADMS namespace.
+The historic connection with DCAT has been reformulated an as usage example of ADMS.
+</p><p>
+The namespace for ADMS is <code>http://www.w3.org/ns/adms#</code> .
+</p>
+</section>
+
+
+
+
+<section id="specstatus" class="informative">
+    <h2>Status</h2>
+        <p>
+            This vocabulary has the status <a href="https://www.w3.org/2021/Process-20211102/#RecsWD">Working Draft</a> published at 2023-04-05.
+        </p>
+        <p>
+            Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/ADMS/">Changelog</a>.
+        </p>
+
+<h3>History</h3>
+<p>
+ADMS was first developed by and published by the European Commission ISA Programme. Contributors included representatives of Member States of the European Union, operators of national repositories, standardisation bodies and independent experts whose work was published in April 2012 [[ADMS1]]. That document includes the original history and motivation behind the development of ADMS, as well as the business need and usage scenario for it.
+
+</p><p>
+Further development and review has been undertaken by the Government Linked Data Working Group [[WG-GLD]]. This version of ADMS builds on the original work in a broader, global context. It also includes some changes to the original version made as a result of implementation experience, particularly on the European Commission's Joinup Platform.
+Under supervision of this Working Group a minor update has been published, which did not include any substantial changes compared to the first published version by the Working Group.
+The latest document was published as a W3C Working Group Note [[vocab-adms]] at 1 August 2013 and has not been revised since than.
+</p>
+
+<h3>Motivation for this version</h3>
+<p>
+In the light of providing the semantic data community, and thus especially the SEMIC community,  a coherent and trusted collection of maintained vocabularies, the European Commission ( Interoperable Europe ) engaged itself to take up the active maintenance of the ADMS vocabulary. 
+In the past decade the SEMIC community of the European Commission has been supporting ADMS by taking up the management of the associated controlled vocabularies and the management of an application profile, independently from the W3C note. 
+Given that initiative for this vocabulary as been taken by the European Commission and this vocabulary has not been adopted as the W3C recommendation, W3C and the European Commission collaborate together to provide an active maintenance of this vocabulary.
+
+</p><p>
+This new release of ADMS will decouple ADMS from DCAT for the terms in the vocabulary.
+Doing so the lifecycle of ADMS is not anymore bound to the lifecyle of DCAT. 
+With the active development of DCAT and its profiles, the status of ADMS as profile of DCAT becomes unclear.
+The impact of DCAT on the ADMS vocabulary as profile of DCAT is not only on its relationship, but also on how the profile is constructed and on the adoption of some terminology.
+For instance, ADMS has some versioning navigation properties, but those are not adopted by DCAT but replaced by similar properties in the DCAT namespace.
+All these changes to the base vocabulary DCAT, of which ADMS declared itself originally a profile of, force a regular adaption of ADMS.
+</p><p>
+With this new release ADMS is decoupled to the furtest extend possible from DCAT (no formal ties), while maintaining its original definitions.
+In essence one can consider this as a broadening of the ADMS terms.
+</p><p>
+
+While this independence offers new potential for reuse, the goal is not to create a parallell universe to DCAT.
+As such it is highly recommended in order to use ADMS in full, to first create a DCAT profile with the ADMS terms included.
+This means that although some ADMS classes and properties are not deprecated, the newly created DCAT profile will adhere first to DCAT, and only use the ADMS terms that are fit for purpose for the profile. 
+The historic depencency should facilitate the creation of such profile easily. 
+
+
+</p>
+</section>
+
+
+
+
+<section id="speclicence">
+    <h2>
+        License
+    </h2>
+    
+        <p>
+	<!--
+            <span rel="dct:type"
+                  property="dct:title"
+                  href="http://purl.org/dc/dcmitype/Text"
+                  xmlns:dct="http://purl.org/dc/terms/">
+		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
+	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
+	-->
+             Copyright © 2023 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+        </p>
+    
+</section>
+
+
+<section id="conformance">
+    <h2>
+        Conformance
+    </h2>
+        <p>
+            If a data interchange meets the following conditions, irrespective of how the interchange takes place, it is considered conformant with ADMS if:
+	    <ul>
+            <li>the terms (classes and properties) from ADMS are utilised in a manner that aligns with their semantics as specified in ADMS;</li>
+            <li>it does not use terms from other vocabularies instead of ones defined in this vocabulary that could reasonably be used (use of such terms in addition to ADMS is permissible).</li>
+	    </ul>
+        </p>
+        <p>
+            A data interchange conforming to ADMS:
+	    <ul>
+            <li>MAY include terms of other vocabularies;</li>
+            <li>MAY use only a subset of ADMS terms.</li>
+	    </ul>
+        </p>
+        <p>
+            An ADMS profile is a specification that imposes additional constraints on data interchange. These restrictions may encompass, but are not restricted to:
+	    <ul>
+            <li>a minimum set of required terms;</li>
+            <li>classes and properties for additional terms not covered in ADMS;</li>
+            <li>controlled vocabularies or URI sets as acceptable values for properties;</li>
+            <li>specific concrete protocols, formats, and syntaxes.</li>
+	    </ul>
+        </p>
+        <p>
+            Although RDF and XML are preferred, ADMS is agnostic to technology, and the terms defined in the document can be encoded in any technology by publishers.
+        </p>
+</section>
+
+
+
+<section id="specterminology">
+<h2>Terminology</h2>
+
+<h3>Used Prefixes</h3>
+
+
+        <table id="table-namespaces" class="simple">
+            <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+            <tbody>
+            <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr>
+            <tr><td><code>dcat</code></td><td><code>http://www.w3.org/ns/dcat#</code></td></tr>
+            <tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
+            <tr><td><code>dctype</code></td><td><code>http://purl.org/dc/dcmitype/</code></td></tr>
+            <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
+            <tr><td><code>locn</code></td><td><code>http://www.w3.org/ns/locn#</code></td></tr>
+            <tr><td><code>owl</code></td><td><code>http://www.w3.org/2002/07/owl#</code></td></tr>
+            <tr><td><code>prov</code></td><td><code>http://www.w3.org/ns/prov#</code></td></tr>
+            <tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
+            <tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
+            <tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
+            <tr><td><code>vcard</code></td><td><code>http://www.w3.org/2006/vcard/ns#</code></td></tr>
+            <tr><td><code>xsd</code></td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr>
+            </tbody>
+        </table>
+
+</section>
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+<section>
+<h2>Vocabulary Overview</h2>
+
+    <div id="overview">
+                
+                        <p>
+                            This specification describes the following classes:
+                            <br />
+                            | 
+			      <a href="#Asset">Asset</a> | 
+			      <a href="#AssetDistribution">Asset Distribution</a> | 
+			      <a href="#AssetRepository">Asset repository</a> | 
+			      <a href="#Identifier">Identifier</a> |
+                        </p>
+                        <p> and the following properties
+                            <br />
+                            | 
+			      <a href="#identifier">identifier</a> |
+			      <a href="#includedAsset">included asset</a> |
+			      <a href="#interoperabilityLevel">interoperability level</a> |
+			      <a href="#last">last</a> |
+			      <a href="#next">next</a> |
+			      <a href="#prev">prev</a> |
+			      <a href="#representationTechnique">representation technique</a> |
+			      <a href="#sample">sample</a> |
+			      <a href="#schemaAgency">schema agency</a> |
+			      <a href="#status">status</a> |
+			      <a href="#supportedSchema">supported schema</a> |
+			      <a href="#translation">translation</a> |
+			      <a href="#versionNotes">version notes</a> |
+                        </p>
+                
+                
+    </div>
+    <div>
+        <a href="/ADMS/releases/2.0/html/overview.jpg"
+           target="_blank">
+            <img src="/ADMS/releases/2.0/html/overview.jpg"/>
+        </a>
+    </div>
+
+
+<h2>
+   Classes
+</h2>
+This section lists the classes matching the base namespace of this vocabulary.
+
+
+   
+
+    <h3 id="Asset" >Asset</h3>
+    <table class="def" id="Asset">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Asset&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#Asset"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#Asset"
+					   data-placement="right">Asset</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Asset.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#Asset
+				</td>
+			</tr>
+                        <tr id="Asset.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Asset
+				</td>
+			</tr>
+                        <tr id="Asset.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)
+				</td>
+			</tr>
+                        <tr id="Asset.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="Asset.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="AssetDistribution" >Asset Distribution</h3>
+    <table class="def" id="AssetDistribution">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20AssetDistribution&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#AssetDistribution"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#AssetDistribution"
+					   data-placement="right">Asset Distribution</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="AssetDistribution.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#AssetDistribution
+				</td>
+			</tr>
+                        <tr id="AssetDistribution.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Asset Distribution
+				</td>
+			</tr>
+                        <tr id="AssetDistribution.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work).
+				</td>
+			</tr>
+                        <tr id="AssetDistribution.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="AssetDistribution.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="AssetRepository" >Asset repository</h3>
+    <table class="def" id="AssetRepository">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20AssetRepository&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#AssetRepository"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#AssetRepository"
+					   data-placement="right">Asset repository</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Assetrepository.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#AssetRepository
+				</td>
+			</tr>
+                        <tr id="Assetrepository.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Asset repository
+				</td>
+			</tr>
+                        <tr id="Assetrepository.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions.
+				</td>
+			</tr>
+                        <tr id="Assetrepository.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="Assetrepository.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Identifier" >Identifier</h3>
+    <table class="def" id="Identifier">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Identifier&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#Identifier"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#Identifier"
+					   data-placement="right">Identifier</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Identifier.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#Identifier
+				</td>
+			</tr>
+                        <tr id="Identifier.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Identifier
+				</td>
+			</tr>
+                        <tr id="Identifier.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				This is based on the UN/CEFACT Identifier class.
+				</td>
+			</tr>
+                        <tr id="Identifier.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="Identifier.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+
+<h2>
+   Properties
+</h2>
+This section lists the properties matching the base namespace of this vocabulary.
+
+
+
+   
+
+    <h3 id="identifier">identifier</h3>
+    <table class="def" id="table-term-identifier">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20identifier&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#identifier"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#identifier"
+					   data-placement="right">identifier</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="identifier.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#identifier
+				</td>
+			</tr>
+                        <tr id="identifier.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				identifier
+				</td>
+			</tr>
+                        <tr id="identifier.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Links a resource to an adms:Identifier class.
+				</td>
+			</tr>
+                        <tr id="identifier.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="identifier.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="identifier.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Identifier"><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="identifier.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="includedAsset">included asset</h3>
+    <table class="def" id="table-term-includedAsset">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20includedAsset&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#includedAsset"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#includedAsset"
+					   data-placement="right">included asset</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="includedasset.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#includedAsset
+				</td>
+			</tr>
+                        <tr id="includedasset.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				included asset
+				</td>
+			</tr>
+                        <tr id="includedasset.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document.
+				</td>
+			</tr>
+                        <tr id="includedasset.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="includedasset.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Asset"><div class="shorten">http://www.w3.org/ns/adms#Asset</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="includedasset.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Asset"><div class="shorten">http://www.w3.org/ns/adms#Asset</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="includedasset.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="interoperabilityLevel">interoperability level</h3>
+    <table class="def" id="table-term-interoperabilityLevel">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20interoperabilityLevel&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#interoperabilityLevel"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#interoperabilityLevel"
+					   data-placement="right">interoperability level</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="interoperabilitylevel.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#interoperabilityLevel
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				interoperability level
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The interoperability level for which the Asset is relevant.
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Asset"><div class="shorten">http://www.w3.org/ns/adms#Asset</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="interoperabilitylevel.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="last">last</h3>
+    <table class="def" id="table-term-last">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20last&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#last"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#last"
+					   data-placement="right">last</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="last.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#last
+				</td>
+			</tr>
+                        <tr id="last.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				last
+				</td>
+			</tr>
+                        <tr id="last.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A link to the current or latest version of the Asset.
+				</td>
+			</tr>
+                        <tr id="last.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="last.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="last.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="last.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td> <a href="http://www.w3.org/1999/xhtml/vocab#last"><div class="shorten">http://www.w3.org/1999/xhtml/vocab#last</div></a>
+                                
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="next">next</h3>
+    <table class="def" id="table-term-next">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20next&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#next"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#next"
+					   data-placement="right">next</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="next.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#next
+				</td>
+			</tr>
+                        <tr id="next.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				next
+				</td>
+			</tr>
+                        <tr id="next.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A link to the next version of the Asset.
+				</td>
+			</tr>
+                        <tr id="next.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="next.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="next.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="next.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td> <a href="http://www.w3.org/1999/xhtml/vocab#next"><div class="shorten">http://www.w3.org/1999/xhtml/vocab#next</div></a>
+                                
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="prev">prev</h3>
+    <table class="def" id="table-term-prev">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20prev&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#prev"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#prev"
+					   data-placement="right">prev</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="prev.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#prev
+				</td>
+			</tr>
+                        <tr id="prev.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				prev
+				</td>
+			</tr>
+                        <tr id="prev.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A link to the previous version of the Asset.
+				</td>
+			</tr>
+                        <tr id="prev.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="prev.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="prev.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="prev.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td> <a href="http://www.w3.org/1999/xhtml/vocab#prev"><div class="shorten">http://www.w3.org/1999/xhtml/vocab#prev</div></a>
+                                
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="representationTechnique">representation technique</h3>
+    <table class="def" id="table-term-representationTechnique">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20representationTechnique&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#representationTechnique"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#representationTechnique"
+					   data-placement="right">representation technique</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="representationtechnique.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#representationTechnique
+				</td>
+			</tr>
+                        <tr id="representationtechnique.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				representation technique
+				</td>
+			</tr>
+                        <tr id="representationtechnique.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique).
+				</td>
+			</tr>
+                        <tr id="representationtechnique.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="representationtechnique.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="representationtechnique.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="representationtechnique.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="sample">sample</h3>
+    <table class="def" id="table-term-sample">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20sample&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#sample"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#sample"
+					   data-placement="right">sample</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="sample.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#sample
+				</td>
+			</tr>
+                        <tr id="sample.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				sample
+				</td>
+			</tr>
+                        <tr id="sample.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Links to a sample of an Asset (which is itself an Asset).
+				</td>
+			</tr>
+                        <tr id="sample.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="sample.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="sample.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="sample.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="schemaAgency">schema agency</h3>
+    <table class="def" id="table-term-schemaAgency">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20schemaAgency&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#schemaAgency"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#schemaAgency"
+					   data-placement="right">schema agency</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="schemaagency.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#schemaAgency
+				</td>
+			</tr>
+                        <tr id="schemaagency.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				schema agency
+				</td>
+			</tr>
+                        <tr id="schemaagency.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The name of the agency that issued the identifier.
+				</td>
+			</tr>
+                        <tr id="schemaagency.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="schemaagency.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Identifier"><div class="shorten">http://www.w3.org/ns/adms#Identifier</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="schemaagency.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Literal"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Literal</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="schemaagency.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="status">status</h3>
+    <table class="def" id="table-term-status">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20status&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#status"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#status"
+					   data-placement="right">status</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="status.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#status
+				</td>
+			</tr>
+                        <tr id="status.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				status
+				</td>
+			</tr>
+                        <tr id="status.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The status of the Asset in the context of a particular workflow process.
+				</td>
+			</tr>
+                        <tr id="status.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="status.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="status.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="status.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="supportedSchema">supported schema</h3>
+    <table class="def" id="table-term-supportedSchema">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20supportedSchema&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#supportedSchema"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#supportedSchema"
+					   data-placement="right">supported schema</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="supportedschema.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#supportedSchema
+				</td>
+			</tr>
+                        <tr id="supportedschema.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				supported schema
+				</td>
+			</tr>
+                        <tr id="supportedschema.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A schema according to which the Asset Repository can provide data about its content, e.g. ADMS.
+				</td>
+			</tr>
+                        <tr id="supportedschema.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="supportedschema.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="supportedschema.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/adms#Asset"><div class="shorten">http://www.w3.org/ns/adms#Asset</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="supportedschema.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="translation">translation</h3>
+    <table class="def" id="table-term-translation">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20translation&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#translation"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#translation"
+					   data-placement="right">translation</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="translation.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#translation
+				</td>
+			</tr>
+                        <tr id="translation.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				translation
+				</td>
+			</tr>
+                        <tr id="translation.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Links Assets that are translations of each other.
+				</td>
+			</tr>
+                        <tr id="translation.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="translation.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="translation.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="translation.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="versionNotes">version notes</h3>
+    <table class="def" id="table-term-versionNotes">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20versionNotes&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/adms#versionNotes"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/adms#versionNotes"
+					   data-placement="right">version notes</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="versionnotes.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/adms#versionNotes
+				</td>
+			</tr>
+                        <tr id="versionnotes.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				version notes
+				</td>
+			</tr>
+                        <tr id="versionnotes.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A description of changes between this version and the previous version of the Asset.
+				</td>
+			</tr>
+                        <tr id="versionnotes.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="versionnotes.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Resource</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="versionnotes.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Literal"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Literal</div></a>
+                                
+				</td>
+			</tr>
+                        <tr id="versionnotes.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+</section>
+
+<!--
+<section>
+<h2>
+   External terms
+</h2>
+This section lists the classes and properties that are mapped on external URIs.
+Either these are reused as-is, i.e. with no formal additional constraints compared to those retrievable via dereferencing the URI, or they are reused with terminological changes, i.e. having additional changes restricting the use to the needs of this vocabulary context.
+
+
+
+   
+
+    <h3>access URL</h3>
+    <table class="def" id="table-term-accessUrl">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20accessUrl&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#accessURL"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#accessURL"
+					   data-placement="right">access URL</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="accessURL.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#accessURL
+				</td>
+			</tr>
+                        <tr id="accessURL.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				access URL
+				</td>
+			</tr>
+                        <tr id="accessURL.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A URL that gives access to a Distribution of the Dataset.
+				</td>
+			</tr>
+                        <tr id="accessURL.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="accessURL.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="accessURL.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="accessURL.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>access URL</h3>
+    <table class="def" id="table-term-accessUrl">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20accessUrl&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#accessURL"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#accessURL"
+					   data-placement="right">access URL</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="accessURL.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#accessURL
+				</td>
+			</tr>
+                        <tr id="accessURL.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				access URL
+				</td>
+			</tr>
+                        <tr id="accessURL.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A URL that gives access to a Distribution of the Dataset.
+				</td>
+			</tr>
+                        <tr id="accessURL.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="accessURL.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="accessURL.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="accessURL.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>alternative label</h3>
+    <table class="def" id="table-term-alternativeLabel">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20alternativeLabel&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/2004/02/skos/core#altLabel"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/2004/02/skos/core#altLabel"
+					   data-placement="right">alternative label</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="alternativelabel.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/2004/02/skos/core#altLabel
+				</td>
+			</tr>
+                        <tr id="alternativelabel.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				alternative label
+				</td>
+			</tr>
+                        <tr id="alternativelabel.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="alternativelabel.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				An alternative name for the Asset.
+				</td>
+			</tr>
+                        <tr id="alternativelabel.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="alternativelabel.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="alternativelabel.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>creator</h3>
+    <table class="def" id="table-term-creator">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20creator&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/creator"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/creator"
+					   data-placement="right">creator</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="creator.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/creator
+				</td>
+			</tr>
+                        <tr id="creator.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				creator
+				</td>
+			</tr>
+                        <tr id="creator.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An entity responsible for making the resource.
+				</td>
+			</tr>
+                        <tr id="creator.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				An entity responsible for making the resource.
+				</td>
+			</tr>
+                        <tr id="creator.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="creator.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="creator.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>dataset</h3>
+    <table class="def" id="table-term-dataset">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20dataset&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#dataset"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#dataset"
+					   data-placement="right">dataset</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="dataset.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#dataset
+				</td>
+			</tr>
+                        <tr id="dataset.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				dataset
+				</td>
+			</tr>
+                        <tr id="dataset.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A Dataset that is part of the Catalogue.
+				</td>
+			</tr>
+                        <tr id="dataset.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Used to link an Asset Repository to an Asset.
+				</td>
+			</tr>
+                        <tr id="dataset.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="dataset.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="dataset.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>dataset distribution</h3>
+    <table class="def" id="table-term-datasetDistribution">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20datasetDistribution&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#distribution"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#distribution"
+					   data-placement="right">dataset distribution</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="datasetdistribution.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#distribution
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				dataset distribution
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An available Distribution for the Dataset.
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Links an Asset to an implementation in a particular format.
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="datasetdistribution.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>description</h3>
+    <table class="def" id="table-term-description">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20description&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/description"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/description"
+					   data-placement="right">description</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="description.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/description
+				</td>
+			</tr>
+                        <tr id="description.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				description
+				</td>
+			</tr>
+                        <tr id="description.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An account of the resource.
+				</td>
+			</tr>
+                        <tr id="description.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="description.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="description.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="description.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>download URL</h3>
+    <table class="def" id="table-term-downloadUrl">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20downloadUrl&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#downloadURL"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#downloadURL"
+					   data-placement="right">download URL</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="downloadURL.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#downloadURL
+				</td>
+			</tr>
+                        <tr id="downloadURL.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				download URL
+				</td>
+			</tr>
+                        <tr id="downloadURL.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A URL that is a direct link to a downloadable file in a given format.
+				</td>
+			</tr>
+                        <tr id="downloadURL.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				This is a direct link from an Asset Distribution to a downloadable file in a given format, e.g. CSV file or RDF file. The format is described by the distribution's dcterms:format and/or dcat:mediaType.
+				</td>
+			</tr>
+                        <tr id="downloadURL.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="downloadURL.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="downloadURL.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>keyword</h3>
+    <table class="def" id="table-term-keyword">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20keyword&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#keyword"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#keyword"
+					   data-placement="right">keyword</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="keyword.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#keyword
+				</td>
+			</tr>
+                        <tr id="keyword.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				keyword
+				</td>
+			</tr>
+                        <tr id="keyword.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A keyword or tag describing the Dataset.
+				</td>
+			</tr>
+                        <tr id="keyword.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				A word, phrase or tag to describe the Asset.
+				</td>
+			</tr>
+                        <tr id="keyword.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="keyword.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="keyword.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>modification date</h3>
+    <table class="def" id="table-term-modificationDate">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20modificationDate&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/modified"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/modified"
+					   data-placement="right">modification date</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="modificationdate.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/modified
+				</td>
+			</tr>
+                        <tr id="modificationdate.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				modification date
+				</td>
+			</tr>
+                        <tr id="modificationdate.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Date on which the resource was changed.
+				</td>
+			</tr>
+                        <tr id="modificationdate.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="modificationdate.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="modificationdate.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="modificationdate.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>notation</h3>
+    <table class="def" id="table-term-notation">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20notation&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/2004/02/skos/core#notation"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/2004/02/skos/core#notation"
+					   data-placement="right">notation</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="notation.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/2004/02/skos/core#notation
+				</td>
+			</tr>
+                        <tr id="notation.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				notation
+				</td>
+			</tr>
+                        <tr id="notation.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="notation.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="notation.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="notation.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="notation.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>relation</h3>
+    <table class="def" id="table-term-relation">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20relation&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/relation"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/relation"
+					   data-placement="right">relation</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="relation.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/relation
+				</td>
+			</tr>
+                        <tr id="relation.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				relation
+				</td>
+			</tr>
+                        <tr id="relation.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A related resource.
+				</td>
+			</tr>
+                        <tr id="relation.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="relation.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="relation.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="relation.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>release date</h3>
+    <table class="def" id="table-term-releaseDate">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20releaseDate&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/issued"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/issued"
+					   data-placement="right">release date</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="releasedate.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/issued
+				</td>
+			</tr>
+                        <tr id="releasedate.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				release date
+				</td>
+			</tr>
+                        <tr id="releasedate.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Date of formal issuance of the resource.
+				</td>
+			</tr>
+                        <tr id="releasedate.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="releasedate.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="releasedate.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="releasedate.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>Resource</h3>
+    <table class="def" id="table-term-Resource">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Resource&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/2000/01/rdf-schema#Resource"
+					   data-placement="right">Resource</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Resource.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/2000/01/rdf-schema#Resource
+				</td>
+			</tr>
+                        <tr id="Resource.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Resource
+				</td>
+			</tr>
+                        <tr id="Resource.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Anything described by RDF.
+				</td>
+			</tr>
+                        <tr id="Resource.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="Resource.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="Resource.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="Resource.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>title</h3>
+    <table class="def" id="table-term-title">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20title&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/title"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/title"
+					   data-placement="right">title</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="title.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/title
+				</td>
+			</tr>
+                        <tr id="title.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				title
+				</td>
+			</tr>
+                        <tr id="title.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+					A name given to the resource.
+				</td>
+			</tr>
+                        <tr id="title.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				
+				</td>
+			</tr>
+                        <tr id="title.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="title.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="title.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>version</h3>
+    <table class="def" id="table-term-version">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20version&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/2002/07/owl#versionInfo"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/2002/07/owl#versionInfo"
+					   data-placement="right">version</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="version.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/2002/07/owl#versionInfo
+				</td>
+			</tr>
+                        <tr id="version.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				version
+				</td>
+			</tr>
+                        <tr id="version.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A version number or other version designation of the Dataset.
+				</td>
+			</tr>
+                        <tr id="version.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				A version number or other designation of the Asset.
+				</td>
+			</tr>
+                        <tr id="version.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="version.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="version.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+
+</section>
+-->
+
+
+ 
+  
+<section class="informative">
+<h1>Historic interpretation of ADMS in the context of DCAT.</h1>
+
+<p>
+ADMS was originally very tightly integrated with DCAT. 
+As motivated in the introduction [[[#specintro]]], this version decouples ADMS from DCAT.
+Nevertheless, this historic connection is important. 
+This section, therefore, provides the base principles for building an ADMS based profile of DCAT. 
+</p><p>
+
+The principles are:
+<ul>
+   <li>The main classes adms:AssetRepository, adms:Asset and adms:AssetDistribution are respectively defined as subclasses of dcat:Catalog, dcat:Dataset and dcat:Distribution. </li>
+   <li>Use the relations dcat:dataset (or the more generic dcat:resource) and dcat:distribution to interconnect adms:AssetRepository, adms:Asset and adms:AssetDistibution. </li>
+   <li>The properties adms:last, adms:next, adms:prev have dcat:last, dcat:next, dcat:prev counterparts. It is recommended to use the DCAT ones in favor of the adms counterparts.</li>
+</ul>
+The last principle formulates that if the objective is to create a profile of DCAT, it recommended to the best extend with the DCAT specification. 
+ADMS terminology should only be adopted in the profile when they precisely capture the needs. 
+
+</p><p>
+
+
+<h2>Example profile specification</h2>
+Using these principles, the original profile of DCAT for ADMS can be contructed. The orginal picture is depicted below.
+
+    <div>
+        <a href="/ADMS/releases/2.0/html/adms-as-dcat.png"
+           target="_blank">
+           <figure id="figure">
+            <img src="/ADMS/releases/2.0/html/adms-as-dcat.png"/>
+	    <figcaption>ADMS as DCAT profile</figcaption>
+	   </figure>
+        </a>
+    </div>
+
+The properties that are included in that context are listed below.
+
+<table class="simple" id="table-dcatprofile">
+                    <thead>
+                        <tr >
+                            <th style="width:20%">
+                                Label
+                            </th>
+                            <th style="width:30%">
+                                URI
+                            </th> 
+                            <th style="width:50%">
+                                Usage Note
+                            </th> 
+                        </tr>
+                    </thead>
+		<tbody> 
+		
+		   
+
+         <tr id="accessURL.uri">
+				<td>
+				access URL
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#accessURL
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="accessURL.uri">
+				<td>
+				access URL
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#accessURL
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="alternativelabel.uri">
+				<td>
+				alternative label
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/2004/02/skos/core#altLabel
+				</div>
+				</td>
+				<td>
+				An alternative name for the Asset.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="creator.uri">
+				<td>
+				creator
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/creator
+				</div>
+				</td>
+				<td>
+				An entity responsible for making the resource.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="dataset.uri">
+				<td>
+				dataset
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#dataset
+				</div>
+				</td>
+				<td>
+				Used to link an Asset Repository to an Asset.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="datasetdistribution.uri">
+				<td>
+				dataset distribution
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#distribution
+				</div>
+				</td>
+				<td>
+				Links an Asset to an implementation in a particular format.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="description.uri">
+				<td>
+				description
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/description
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="downloadURL.uri">
+				<td>
+				download URL
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#downloadURL
+				</div>
+				</td>
+				<td>
+				This is a direct link from an Asset Distribution to a downloadable file in a given format, e.g. CSV file or RDF file. The format is described by the distribution's dcterms:format and/or dcat:mediaType.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="keyword.uri">
+				<td>
+				keyword
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#keyword
+				</div>
+				</td>
+				<td>
+				A word, phrase or tag to describe the Asset.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="modificationdate.uri">
+				<td>
+				modification date
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/modified
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="notation.uri">
+				<td>
+				notation
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/2004/02/skos/core#notation
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="relation.uri">
+				<td>
+				relation
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/relation
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="releasedate.uri">
+				<td>
+				release date
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/issued
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="Resource.uri">
+				<td>
+				Resource
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/2000/01/rdf-schema#Resource
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="title.uri">
+				<td>
+				title
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/title
+				</div>
+				</td>
+				<td>
+				
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="version.uri">
+				<td>
+				version
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/2002/07/owl#versionInfo
+				</div>
+				</td>
+				<td>
+				A version number or other designation of the Asset.
+				</td>
+         </tr>
+
+     
+		
+		</tbody>
+        </table>
+
+</p>
+
+
+<h2>Example</h2>
+
+<p>
+This example illustrates the use of ADMS in the orginal context of a DCAT profile.
+Examples in this document are serialized in Turtle [[turtle]].
+
+</p><p>
+First, the repository description:
+<aside class="example" title="">
+  <pre class="nohighlight turtle">
+
+:Repository a adms:AssetRepository ;
+  dcterms:created "1947-02-07"^^xsd:date ;
+  dcterms:description "A complete catalog of code lists and standards created by the Exemplary Standards Body"@en ;
+  dcterms:publisher <http://example.com/data#org> ;
+  dcterms:title "The Exemplary Standards Body Catalog"@en .
+  </pre>
+</aside>
+
+This assumes that the Exemplary Standards Body is described at <code>http://example.com/data#org</code> .
+
+Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'</code> for our example:
+
+<ul>
+    <li>apples</li>
+    <li>pears</li>
+    <li>oranges</li>
+    <li>peaches</li>
+</ul>
+
+We might describe this Asset thus:
+
+<aside class="example" title="">
+  <pre class="nohighlight turtle">
+  :Fruit_02 a adms:Asset ;
+    dcterms:created "1999-05-24" ;
+    dcterms:description "Fruits that are found to be generally liked by most people." ;
+    dcterms:publisher <http://example.com/data#org> ;
+    dcterms:title "Fruit I like"@en ;
+    adms:status <http://purl.org/adms/status/Completed> ;
+    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+    adms:previous :Fruit_01 ;
+    adms:last :Fruit ;
+    dcat:distribution :Fruit_02.csv ;
+    dcat:distribution :Fruit_02.xml .
+  </pre>
+</aside>
+
+This provides the creation date (line 2), description (line 3), publisher (line 4) and a title (line 5) for the Asset. 
+The status of the Asset is given in line 6 using one of the values made available in the codelists created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 7. 
+In line 8 we can see that there was a previous version of this asset <code>(Fruit_01)</code> and that the latest version can be found by appending 'Fruit' to the data's root (line 9).
+
+This Asset has two distributions linked in lines 11 and 12. One of these might be described thus:
+
+<aside class="example" title="">
+  <pre class="nohighlight turtle">
+:Fruit_02.xml a adms:AssetDistribution ;
+  dcterms:description "XML encoding of Fruits that are found to be generally liked by most people." ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> .
+  </pre>
+</aside>
+
+This is a very simple description of the Asset Distribution that just gives its description, format, and license. In this example we've used the NAL File Type [[NAL-FileType]] to provide a URI for the XML MIME type.
+
+The missing triple from this example is the one that includes the Asset in the Repository. This is done with a simple triple:
+
+<aside class="example" title="">
+  <pre class="nohighlight turtle">
+:Repository dcat:dataset :Fruit_02 .
+  </pre>
+</aside>
+
+
+
+
+</section>
+
+ 
+
+
+<section class="appendix">
+
+<h2>Acknowledgments</h2>
+<p>
+The editors gratefully acknowledge the contributions made to this document by all members of the working group.
+</p><p>
+This work was elaborated by a Working Group under SEMIC by Interoperable Europe.
+Interoperable Europe of the European Commission was represented by Pavlina Fragkou and Seth Van Hooland.
+Bert Van Nuffelen was the editor of this specification.
+</p><p>
+
+Past and current contributors are :
+
+
+
+
+.
+
+</p><p>
+Special thanks goes to the former editors Phil Archer, Gofran Shukair and Makx Dekkers, for their contributions to the former versions of ADMS.
+Additionally the editors and authors like to thank the assistence of W3C, especially Pierre-Antoine Champin, to make this version possible.
+</p>
+
+</section>
+<!-- End page content -->
+</body>
+
+<!-- This must be at the end of the template, to ensure that the iterator properly works -->
+    <script defer>
+
+
+	    var prefixes = [ 
+{'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
+{'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
+{'pref':'dct:', 'ns': 'http://purl.org/dc/terms/'},
+{'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
+{'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
+{'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
+{'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
+{'pref':'owl:', 'ns': 'http://www.w3.org/2002/07/owl#'},
+{'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
+{'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
+{'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
+{'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
+{'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
+{'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
+{'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
+{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
+				];
+
+	    function shorturl (url) {
+				var short = url;
+				for (e in prefixes) {
+				   var elem = prefixes[e];
+				   if (short.startsWith(elem.ns)) {
+  					short = elem.pref + short.slice(elem.ns.length);
+					}
+				};
+				return short;
+			};
+
+	    var shorten = document.getElementsByClassName("shorten");
+	    for (k=0;k < shorten.length ; k++){
+			var selem = shorten[k];	
+	                selem.innerHTML = shorturl(selem.innerHTML.trim());
+			}
+    </script>
+</html>
