@@ -296,43 +296,23 @@ The historic depencency should facilitate the creation of such profile easily.
 
 
 <section id="conformance">
-    <h2>
-        Conformance
-    </h2>
-        <p>
-            If a data interchange meets the following conditions, irrespective of how the interchange takes place, it is considered conformant with ADMS if:
-	    <ul>
-            <li>the terms (classes and properties) from ADMS are utilised in a manner that aligns with their semantics as specified in ADMS;</li>
-            <li>it does not use terms from other vocabularies instead of ones defined in this vocabulary that could reasonably be used (use of such terms in addition to ADMS is permissible).</li>
-	    </ul>
-        </p>
-        <p>
-            A data interchange conforming to ADMS:
-	    <ul>
-            <li>MAY include terms of other vocabularies;</li>
-            <li>MAY use only a subset of ADMS terms.</li>
-	    </ul>
-        </p>
-        <p>
-            An ADMS profile is a specification that imposes additional constraints on data interchange. These restrictions may encompass, but are not restricted to:
-	    <ul>
-            <li>a minimum set of required terms;</li>
-            <li>classes and properties for additional terms not covered in ADMS;</li>
-            <li>controlled vocabularies or URI sets as acceptable values for properties;</li>
-            <li>specific concrete protocols, formats, and syntaxes.</li>
-	    </ul>
-        </p>
-        <p>
-            Although RDF and XML are preferred, ADMS is agnostic to technology, and the terms defined in the document can be encoded in any technology by publishers.
-        </p>
+<p>
+ADMS is a vocabulary that defines a collection of terms having minimal usage restrictions. 
+Usage of the terms is considered conformant with ADMS if the terms (classes and properties) from ADMS are utilised in a manner that aligns with their semantics as specified in ADMS.
+That means the usage is conformant to 
+<ul>
+<li> the definitions and usage notes for the classes and properties, and
+<li> the domain and ranges of the properties
+</ul>
+In this vocabulary the rdfs:Resource class is used to denote any possible resource. Thus meaning no restriction in usage.
 </section>
 
 
 
 <section id="specterminology">
-<h2>Terminology</h2>
+<h1>Terminology</h1>
 
-<h3>Used Prefixes</h3>
+<h2>Used Prefixes</h2>
 
 
         <table id="table-namespaces" class="simple">
@@ -370,7 +350,7 @@ The historic depencency should facilitate the creation of such profile easily.
 
 
 <section>
-<h2>Vocabulary Overview</h2>
+<h1>Vocabulary Overview</h1>
 
     <div id="overview">
                 
@@ -3100,95 +3080,6 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 
    
 
-    <h3>Resource</h3>
-    <table class="def" id="table-term-Resource">
-                    <thead>
-                        <tr >
-                            <th class="" style="width:5%">
-					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Resource&body=Explain%20your%20issue"}}>
-					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-					</a>
-                            </th>
-                            <th class="" style="width:20%">
-                                Class/Property
-                            </th>
-                            <th class="" style="width:75%">
-				<a href="http://www.w3.org/2000/01/rdf-schema#Resource"
-					   data-toggle="tooltip"
-					   data-content="http://www.w3.org/2000/01/rdf-schema#Resource"
-					   data-placement="right">Resource</a>
-                            </th> 
-                        </tr>
-                    </thead>
-		    <tbody> 
-                        <tr id="Resource.uri">
-                                <td></td>
-                                <td>
-				   URI
-				</td>
-				<td>
-				http://www.w3.org/2000/01/rdf-schema#Resource
-				</td>
-			</tr>
-                        <tr id="Resource.label">
-                                <td></td>
-                                <td>
-				   label
-				</td>
-				<td>
-				Resource
-				</td>
-			</tr>
-                        <tr id="Resource.definition">
-                                <td></td>
-                                <td>
-				   definition
-				</td>
-				<td>
-				Anything described by RDF.
-				</td>
-			</tr>
-                        <tr id="Resource.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
-                        <tr id="Resource.domain">
-                                <td></td>
-                                <td>
-				   domain
-				</td>
-				<td>
-				</td>
-			</tr>
-                        <tr id="Resource.range">
-                                <td></td>
-                                <td>
-				   range
-				</td>
-				<td>
-				</td>
-			</tr>
-                        <tr id="Resource.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
-		    </tbody>
-        </table>
-	<p/>
-
-     
-
-   
-
     <h3>title</h3>
     <table class="def" id="table-term-title">
                     <thead>
@@ -3650,24 +3541,6 @@ The properties that are included in that context are listed below.
 				<td>
 				<div class="shorten">
 				http://purl.org/dc/terms/issued
-				</div>
-				</td>
-				<td>
-				
-				</td>
-         </tr>
-
-     
-		
-		   
-
-         <tr id="Resource.uri">
-				<td>
-				Resource
-				</td>
-				<td>
-				<div class="shorten">
-				http://www.w3.org/2000/01/rdf-schema#Resource
 				</div>
 				</td>
 				<td>
