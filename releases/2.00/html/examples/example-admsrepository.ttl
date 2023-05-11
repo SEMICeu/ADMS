@@ -1,0 +1,10 @@
+prefix : <http://www.example.org/rdf#>
+prefix adms: <http://www.w3.org/ns/adms#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Repository a adms:AssetRepository ;
+  dcterms:created "1947-02-07"^^xsd:date ;
+  dcterms:description "A complete catalog of code lists and standards created by the Exemplary Standards Body"@en ;
+  dcterms:publisher :org ;
+  dcterms:title "The Exemplary Standards Body Catalog"@en .

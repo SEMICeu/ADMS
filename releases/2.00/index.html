@@ -8,6 +8,8 @@
 	
     <meta charset="utf-8" />
     <title>ADMS Vocabulary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
     <script class="remove">
     // All config options at https://respec.org/docs/
@@ -3611,6 +3613,10 @@ First, the repository description:
   </pre>
 </aside>
 
+<div id="examples">
+<h3 class="h3" id="example-admsrepository">Example 1 - ADMS as DCAT profile</h3>
+</div>
+
 This assumes that the Exemplary Standards Body is described at <code>http://example.com/data#org</code> .
 
 Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'</code> for our example:
@@ -3698,6 +3704,42 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 
 </section>
 <!-- End page content -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js"></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
+    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
+	<style>
+		.buttonsample {
+		cursor: pointer;
+		margin-top: 10px;
+		margin-left: 10px;
+		font-weight: 700;
+		border:0 outset buttonface;
+		background: #F5F6F8;
+		background-image: linear-gradient(to bottom,#F5F6F8,#DBDCDE);
+		border-radius:4px;
+		box-shadow:0 1px 3px #666;
+		font-family: Arial;
+		color: grey;
+		font-size: 14px;
+		padding: 10px 5px;
+		text-decoration: none;
+		float: right
+	}
+	.buttonsample:hover {color:#2a70d3}
+	.tabsstyle {
+		padding: 10px;
+		overflow: hidden;
+	}
+	li.ui-tabs-tab > a:hover {
+		background-color:dodgerblue;
+		color:white;
+	}
+  </style>
 </body>
 
 <!-- This must be at the end of the template, to ensure that the iterator properly works -->
