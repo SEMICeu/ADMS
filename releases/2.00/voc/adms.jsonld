@@ -56,7 +56,7 @@
     "prev": "https://www.w3.org/TR/vocab-adms"
   },
   "publication-state": "https://www.w3.org/2021/Process-20211102/#RecsWD",
-  "publication-date": "2023-04-05",
+  "publication-date": "2023-05-16",
   "classes": [
     {
       "@id": "http://www.w3.org/ns/adms#Asset",
@@ -99,6 +99,9 @@
       },
       "definition": {
         "en": "This is based on the UN/CEFACT Identifier class."
+      },
+      "usage": {
+        "en": "An identifier in a particular context, consisting of the \r\n<ul>\r\n<li>content string that is the identifier;</li>\r\n<li>an optional identifier for the identifier scheme; </li>\r\n<li>an optional identifier for the version of the identifier scheme;</li>\r\n<li>an optional identifier for the agency that manages the identifier scheme.</li>"
       },
       "parents": []
     }
@@ -331,113 +334,6 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "generalization": []
-    }
-  ],
-  "externalproperties": [
-    {
-      "name": {
-        "en": "creator"
-      },
-      "@id": "http://purl.org/dc/terms/creator",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "description"
-      },
-      "@id": "http://purl.org/dc/terms/description",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "release date"
-      },
-      "@id": "http://purl.org/dc/terms/issued",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "modification date"
-      },
-      "@id": "http://purl.org/dc/terms/modified",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "relation"
-      },
-      "@id": "http://purl.org/dc/terms/relation",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "title"
-      },
-      "@id": "http://purl.org/dc/terms/title",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "version"
-      },
-      "@id": "http://www.w3.org/2002/07/owl#versionInfo",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "alternative label"
-      },
-      "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "notation"
-      },
-      "@id": "http://www.w3.org/2004/02/skos/core#notation",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "access URL"
-      },
-      "@id": "http://www.w3.org/ns/dcat#accessURL",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "access URL"
-      },
-      "@id": "http://www.w3.org/ns/dcat#accessURL",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "dataset"
-      },
-      "@id": "http://www.w3.org/ns/dcat#dataset",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "dataset distribution"
-      },
-      "@id": "http://www.w3.org/ns/dcat#distribution",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "download URL"
-      },
-      "@id": "http://www.w3.org/ns/dcat#downloadURL",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "keyword"
-      },
-      "@id": "http://www.w3.org/ns/dcat#keyword",
-      "@type": "rdf:Property"
     }
   ],
   "@context": {

@@ -8,7 +8,7 @@
 	
     <meta charset="utf-8" />
     <title>ADMS Vocabulary</title>
-	<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
     <script class="remove">
     // All config options at https://respec.org/docs/
 
@@ -92,8 +92,8 @@
     var respecConfig = {
       edDraftURI: "https://semiceu.github.io//ADMS/releases/2.00",
       latestVersion: "https://www.w3.org/TR/vocab-adms",
-      specStatus: "unofficial",
-      publishDate: "2023-04-05",
+      specStatus: "LS",
+      publishDate: "2023-05-16",
       prevRecURI: "https://www.w3.org/TR/vocab-adms",
       editors: myeditors,
       authors: myauthors,
@@ -102,7 +102,7 @@
       xref: "web-platform",
       doJsonLd: true,
       logos: [{
-        src: "https://github.com/SEMICeu/Core-Person-Vocabulary/blob/v2.0.0/releases/2.00/html/semic-icon.png",
+        src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
         url: "https://semic.eu",
         alt: "SEMIC",
         width: 154,
@@ -194,7 +194,7 @@
 	    The included classes and properties come with a limited set of constraints.
         </p>
         <p>
-        ADMS, the Asset Description Metadata Schema, is a vocabulary for describing semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. xml schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies) that are used for eGovernment system development. 
+        ADMS, the Asset Description Metadata Schema, is a vocabulary for describing semantic assets (or just 'Assets'), defined as highly reusable metadata (e.g. XML1 schemata, generic data models) and reference data (e.g. code lists, taxonomies, dictionaries, vocabularies).
         </p>
 
 </section>
@@ -203,11 +203,11 @@
 <section id="abstract">
     <h2>Motivation for this vocabulary</h2>
 <p>
-Someone searching for a Semantic Asset is likely to have different needs, priorities and expectations than someone searching for a dataset in a data catalog and these differences are reflected in ADMS. 
+Someone searching for a Semantic Asset is likely to have different needs, priorities and expectations than someone searching for a dataset in a data catalogue and these differences are reflected in ADMS. 
 In particular, users seeking an Asset are likely to be searching for a document — something they can open and read using familiar desktop software, as opposed to something that needs to be processed. 
-Of course this is a very broad generalization. 
+Of course this is a very broad generalisation. 
 If a code list is published as a SKOS Concept scheme [[skos-reference]] then it is both an Asset and a dataset offered to be exploited in a data exchange.
-As vocabulary ADMS focusses on the nature of the Assets, rather than on the organisation of the Assets in a catalogue.
+As a vocabulary ADMS focusses on the nature of the Assets, rather than on the organisation of the Assets in a catalogue.
 </p><p>
 
 Although ADMS has been designed from the above usage case in mind, some terms are used beyond that use case and operate in a broader context.
@@ -217,7 +217,7 @@ The historic connection with DCAT has been reformulated an as usage example of A
 </p><p>
 The namespace for ADMS is <code>http://www.w3.org/ns/adms#</code> .
 </p><p>
-The vocabulary is also provided in different RDF serializations [ <a href="http://uri.semic.eu/w3c/ns/adms.ttl">turtle</a> | <a href="http://uri.semic.eu/w3c/ns/adms.nt">ntriples</a> | <a href="http://uri.semic.eu/w3c/ns/adms.rdf">rdf/xml</a> ].
+The vocabulary is also provided in different RDF serialisations [ <a href="http://www.w3.org/ns/adms.ttl">turtle</a> | <a href="http://www.w3.org/ns/adms.nt">ntriples</a> | <a href="http://www.w3.org/ns/adms.rdf">rdf/xml</a> ].
 
 
 </p>
@@ -229,10 +229,10 @@ The vocabulary is also provided in different RDF serializations [ <a href="http:
 <section id="specstatus" class="informative">
     <h2>Status</h2>
         <p>
-            This vocabulary has the status <a href="https://www.w3.org/2021/Process-20211102/#RecsWD">Working Draft</a> published at 2023-04-05.
+            This vocabulary has the status <a href="https://www.w3.org/2021/Process-20211102/#RecsWD">Working Draft</a> published at 2023-05-16.
         </p>
         <p>
-            Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/ADMS/">Changelog</a>.
+            Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/ADMS/blob/main/releases/2.00/CHANGELOG.md">Changelog</a>.
         </p>
 
 <h3>History</h3>
@@ -240,33 +240,33 @@ The vocabulary is also provided in different RDF serializations [ <a href="http:
 ADMS was first developed by and published by the European Commission ISA Programme. Contributors included representatives of Member States of the European Union, operators of national repositories, standardisation bodies and independent experts whose work was published in April 2012 [[ADMS1]]. That document includes the original history and motivation behind the development of ADMS, as well as the business need and usage scenario for it.
 
 </p><p>
-Further development and review has been undertaken by the Government Linked Data Working Group [[WG-GLD]]. This version of ADMS builds on the original work in a broader, global context. It also includes some changes to the original version made as a result of implementation experience, particularly on the European Commission's Joinup Platform.
-Under supervision of this Working Group a minor update has been published, which did not include any substantial changes compared to the first published version by the Working Group.
-The latest document was published as a W3C Working Group Note [[vocab-adms]] at 1 August 2013 and has not been revised since than.
+Further development and review was undertaken by the Government Linked Data Working Group [[WG-GLD]]. This version of ADMS builds on the original work in a broader, global context. It also includes some changes to the original version made as a result of implementation experience, particularly on the European Commission's Joinup Platform.
+Under supervision of the Government Linked Data  Working Group a minor update has been published, which did not include any substantial changes compared to the first published version by the Working Group.
+The latest document was published as a W3C Working Group Note [[vocab-adms]] at 1 August 2013 and has not been revised since then.
 </p>
 
 <h3>Motivation for this version</h3>
 <p>
 In the light of providing the semantic data community, and thus especially the SEMIC community,  a coherent and trusted collection of maintained vocabularies, the European Commission ( Interoperable Europe ) engaged itself to take up the active maintenance of the ADMS vocabulary. 
-In the past decade the SEMIC community of the European Commission has been supporting ADMS by taking up the management of the associated controlled vocabularies and the management of an application profile, independently from the W3C note. 
-Given that initiative for this vocabulary as been taken by the European Commission and this vocabulary has not been adopted as the W3C recommendation, W3C and the European Commission collaborate together to provide an active maintenance of this vocabulary.
+In the past decade the SEMIC community of the European Commission was supporting ADMS by taking up the management of the associated controlled vocabularies and the management of an application profile, independently from the W3C note. 
+Given that initiative for this vocabulary as been taken by the European Commission and this vocabulary was not adopted as W3C recommendation, W3C and the European Commission collaborate together to provide an active maintenance of this vocabulary.
 
+--This new release of ADMS decouples ADMS from DCAT for the terms in the vocabulary.
 </p><p>
-This new release of ADMS will decouple ADMS from DCAT for the terms in the vocabulary.
-Doing so the lifecycle of ADMS is not anymore bound to the lifecyle of DCAT. 
 With the active development of DCAT and its profiles, the status of ADMS as profile of DCAT becomes unclear.
 The impact of DCAT on the ADMS vocabulary as profile of DCAT is not only on its relationship, but also on how the profile is constructed and on the adoption of some terminology.
 For instance, ADMS has some versioning navigation properties, but those are not adopted by DCAT but replaced by similar properties in the DCAT namespace.
-All these changes to the base vocabulary DCAT, of which ADMS declared itself originally a profile of, force a regular adaption of ADMS.
+All these changes to the base vocabulary DCAT, of which ADMS declared itself originally a profile, force an adaption of ADMS.
+Such alignment is necessary each time DCAT is updated.
 </p><p>
-With this new release ADMS is decoupled to the furtest extend possible from DCAT (no formal ties), while maintaining its original definitions.
+With this new release ADMS is decoupled to the furthest extent possible from DCAT (no formal ties), while maintaining its original definitions.
 In essence one can consider this as a broadening of the ADMS terms.
+Doing so the lifecycle of ADMS is not anymore bound to the lifecycle of DCAT. 
 </p><p>
 
-While this independence offers new potential for reuse, the goal is not to create a parallell universe to DCAT.
-As such it is highly recommended in order to use ADMS in full, to first create a DCAT profile with the ADMS terms included.
-This means that although some ADMS classes and properties are not deprecated, the newly created DCAT profile will adhere first to DCAT, and only use the ADMS terms that are fit for purpose for the profile. 
-The historic depencency should facilitate the creation of such profile easily. 
+While this independence offers new potential for reuse, the goal is not to create a parallel universe to DCAT.
+When cataloguing Semantic Assets is the target use case then it is highly recommended in order to first create a DCAT profile with the ADMS terms included.
+The historic dependency should facilitate the creation of such profile easily. 
 
 
 </p>
@@ -320,17 +320,15 @@ In this vocabulary the rdfs:Resource class is used to denote any possible resour
             <tbody>
             <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr>
             <tr><td><code>dcat</code></td><td><code>http://www.w3.org/ns/dcat#</code></td></tr>
-            <tr><td><code>dct</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
-            <tr><td><code>dctype</code></td><td><code>http://purl.org/dc/dcmitype/</code></td></tr>
+            <tr><td><code>dcterms</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
             <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
-            <tr><td><code>locn</code></td><td><code>http://www.w3.org/ns/locn#</code></td></tr>
             <tr><td><code>owl</code></td><td><code>http://www.w3.org/2002/07/owl#</code></td></tr>
-            <tr><td><code>prov</code></td><td><code>http://www.w3.org/ns/prov#</code></td></tr>
             <tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
             <tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
             <tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
             <tr><td><code>vcard</code></td><td><code>http://www.w3.org/2006/vcard/ns#</code></td></tr>
             <tr><td><code>xsd</code></td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr>
+            <tr><td><code>xvh</code></td><td><code>http://www.w3.org/1999/xhtml/vocab#</code></td></tr>
             </tbody>
         </table>
 
@@ -363,7 +361,7 @@ In this vocabulary the rdfs:Resource class is used to denote any possible resour
 			      <a href="#AssetRepository">Asset repository</a> | 
 			      <a href="#Identifier">Identifier</a> |
                         </p>
-                        <p> and the following properties
+                        <p> and the following properties:
                             <br />
                             | 
 			      <a href="#identifier">identifier</a> |
@@ -447,23 +445,8 @@ This section lists the classes matching the base namespace of this vocabulary.
 				An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)
 				</td>
 			</tr>
-                        <tr id="Asset.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
-                        <tr id="Asset.subclass">
-                                <td></td>
-                                <td>
-				   subclass of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -520,23 +503,8 @@ This section lists the classes matching the base namespace of this vocabulary.
 				A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work).
 				</td>
 			</tr>
-                        <tr id="AssetDistribution.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
-                        <tr id="AssetDistribution.subclass">
-                                <td></td>
-                                <td>
-				   subclass of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -593,23 +561,8 @@ This section lists the classes matching the base namespace of this vocabulary.
 				A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions.
 				</td>
 			</tr>
-                        <tr id="Assetrepository.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
-                        <tr id="Assetrepository.subclass">
-                                <td></td>
-                                <td>
-				   subclass of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -666,23 +619,23 @@ This section lists the classes matching the base namespace of this vocabulary.
 				This is based on the UN/CEFACT Identifier class.
 				</td>
 			</tr>
+			
                         <tr id="Identifier.usage">
                                 <td></td>
                                 <td>
 				   usage 
 				</td>
 				<td>
-				
+				An identifier in a particular context, consisting of the 
+<ul>
+<li>content string that is the identifier;</li>
+<li>an optional identifier for the identifier scheme; </li>
+<li>an optional identifier for the version of the identifier scheme;</li>
+<li>an optional identifier for the agency that manages the identifier scheme.</li>
 				</td>
 			</tr>
-                        <tr id="Identifier.subclass">
-                                <td></td>
-                                <td>
-				   subclass of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -747,15 +700,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				Links a resource to an adms:Identifier class.
 				</td>
 			</tr>
-                        <tr id="identifier.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="identifier.domain">
                                 <td></td>
                                 <td>
@@ -766,6 +712,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="identifier.range">
                                 <td></td>
                                 <td>
@@ -776,14 +724,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="identifier.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -840,15 +782,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document.
 				</td>
 			</tr>
-                        <tr id="includedasset.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="includedasset.domain">
                                 <td></td>
                                 <td>
@@ -859,6 +794,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="includedasset.range">
                                 <td></td>
                                 <td>
@@ -869,14 +806,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="includedasset.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -933,15 +864,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				The interoperability level for which the Asset is relevant.
 				</td>
 			</tr>
-                        <tr id="interoperabilitylevel.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="interoperabilitylevel.domain">
                                 <td></td>
                                 <td>
@@ -952,6 +876,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="interoperabilitylevel.range">
                                 <td></td>
                                 <td>
@@ -962,14 +888,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="interoperabilitylevel.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1026,15 +946,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				A link to the current or latest version of the Asset.
 				</td>
 			</tr>
-                        <tr id="last.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="last.domain">
                                 <td></td>
                                 <td>
@@ -1045,6 +958,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="last.range">
                                 <td></td>
                                 <td>
@@ -1055,6 +970,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="last.subproperty">
                                 <td></td>
                                 <td>
@@ -1064,6 +981,7 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1120,15 +1038,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				A link to the next version of the Asset.
 				</td>
 			</tr>
-                        <tr id="next.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="next.domain">
                                 <td></td>
                                 <td>
@@ -1139,6 +1050,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="next.range">
                                 <td></td>
                                 <td>
@@ -1149,6 +1062,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="next.subproperty">
                                 <td></td>
                                 <td>
@@ -1158,6 +1073,7 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1214,15 +1130,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				A link to the previous version of the Asset.
 				</td>
 			</tr>
-                        <tr id="prev.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="prev.domain">
                                 <td></td>
                                 <td>
@@ -1233,6 +1142,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="prev.range">
                                 <td></td>
                                 <td>
@@ -1243,6 +1154,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="prev.subproperty">
                                 <td></td>
                                 <td>
@@ -1252,6 +1165,7 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1308,15 +1222,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique).
 				</td>
 			</tr>
-                        <tr id="representationtechnique.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="representationtechnique.domain">
                                 <td></td>
                                 <td>
@@ -1327,6 +1234,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="representationtechnique.range">
                                 <td></td>
                                 <td>
@@ -1337,14 +1246,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="representationtechnique.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1401,15 +1304,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				Links to a sample of an Asset (which is itself an Asset).
 				</td>
 			</tr>
-                        <tr id="sample.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="sample.domain">
                                 <td></td>
                                 <td>
@@ -1420,6 +1316,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="sample.range">
                                 <td></td>
                                 <td>
@@ -1430,14 +1328,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="sample.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1494,15 +1386,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				The name of the agency that issued the identifier.
 				</td>
 			</tr>
-                        <tr id="schemaagency.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="schemaagency.domain">
                                 <td></td>
                                 <td>
@@ -1513,6 +1398,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="schemaagency.range">
                                 <td></td>
                                 <td>
@@ -1523,14 +1410,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="schemaagency.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1587,15 +1468,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				The status of the Asset in the context of a particular workflow process.
 				</td>
 			</tr>
-                        <tr id="status.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="status.domain">
                                 <td></td>
                                 <td>
@@ -1606,6 +1480,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="status.range">
                                 <td></td>
                                 <td>
@@ -1616,14 +1492,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="status.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1680,15 +1550,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				A schema according to which the Asset Repository can provide data about its content, e.g. ADMS.
 				</td>
 			</tr>
-                        <tr id="supportedschema.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="supportedschema.domain">
                                 <td></td>
                                 <td>
@@ -1699,6 +1562,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="supportedschema.range">
                                 <td></td>
                                 <td>
@@ -1709,14 +1574,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="supportedschema.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1773,15 +1632,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				Links Assets that are translations of each other.
 				</td>
 			</tr>
-                        <tr id="translation.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="translation.domain">
                                 <td></td>
                                 <td>
@@ -1792,6 +1644,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="translation.range">
                                 <td></td>
                                 <td>
@@ -1802,14 +1656,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="translation.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1866,15 +1714,8 @@ This section lists the properties matching the base namespace of this vocabulary
 				A description of changes between this version and the previous version of the Asset.
 				</td>
 			</tr>
-                        <tr id="versionnotes.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
-				</td>
-			</tr>
+			
+			
                         <tr id="versionnotes.domain">
                                 <td></td>
                                 <td>
@@ -1885,6 +1726,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
+			
+			
                         <tr id="versionnotes.range">
                                 <td></td>
                                 <td>
@@ -1895,14 +1738,8 @@ This section lists the properties matching the base namespace of this vocabulary
                                 
 				</td>
 			</tr>
-                        <tr id="versionnotes.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
+			
+			
 		    </tbody>
         </table>
 	<p/>
@@ -1977,96 +1814,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
-				</td>
-			</tr>
-                        <tr id="accessURL.domain">
-                                <td></td>
-                                <td>
-				   domain
-				</td>
-				<td>
-				</td>
-			</tr>
-                        <tr id="accessURL.range">
-                                <td></td>
-                                <td>
-				   range
-				</td>
-				<td>
-				</td>
-			</tr>
-                        <tr id="accessURL.subproperty">
-                                <td></td>
-                                <td>
-				   subproperty of 
-				</td>
-				<td>
-				</td>
-			</tr>
-		    </tbody>
-        </table>
-	<p/>
-
-     
-
-   
-
-    <h3>access URL</h3>
-    <table class="def" id="table-term-accessUrl">
-                    <thead>
-                        <tr >
-                            <th class="" style="width:5%">
-					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20accessUrl&body=Explain%20your%20issue"}}>
-					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-					</a>
-                            </th>
-                            <th class="" style="width:20%">
-                                Class/Property
-                            </th>
-                            <th class="" style="width:75%">
-				<a href="http://www.w3.org/ns/dcat#accessURL"
-					   data-toggle="tooltip"
-					   data-content="http://www.w3.org/ns/dcat#accessURL"
-					   data-placement="right">access URL</a>
-                            </th> 
-                        </tr>
-                    </thead>
-		    <tbody> 
-                        <tr id="accessURL.uri">
-                                <td></td>
-                                <td>
-				   URI
-				</td>
-				<td>
-				http://www.w3.org/ns/dcat#accessURL
-				</td>
-			</tr>
-                        <tr id="accessURL.label">
-                                <td></td>
-                                <td>
-				   label
-				</td>
-				<td>
-				access URL
-				</td>
-			</tr>
-                        <tr id="accessURL.definition">
-                                <td></td>
-                                <td>
-				   definition
-				</td>
-				<td>
-				A URL that gives access to a Distribution of the Dataset.
-				</td>
-			</tr>
-                        <tr id="accessURL.usage">
-                                <td></td>
-                                <td>
-				   usage 
-				</td>
-				<td>
-				
+				A URL that gives access to the AssetDistribution content.
 				</td>
 			</tr>
                         <tr id="accessURL.domain">
@@ -2175,6 +1923,95 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				</td>
 			</tr>
                         <tr id="alternativelabel.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>contact point</h3>
+    <table class="def" id="table-term-contactPoint">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20contactPoint&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#contactPoint"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#contactPoint"
+					   data-placement="right">contact point</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="contactpoint.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#contactPoint
+				</td>
+			</tr>
+                        <tr id="contactpoint.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				contact point
+				</td>
+			</tr>
+                        <tr id="contactpoint.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Contact information that can be used for sending comments about the Dataset.
+				</td>
+			</tr>
+                        <tr id="contactpoint.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Contact information that can be used for sending comments about the Asset.
+				</td>
+			</tr>
+                        <tr id="contactpoint.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="contactpoint.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="contactpoint.subproperty">
                                 <td></td>
                                 <td>
 				   subproperty of 
@@ -2511,7 +2348,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				A free-text account of the resource (AssetRespository, Asset or AssetDistribution)
 				</td>
 			</tr>
                         <tr id="description.domain">
@@ -2724,6 +2561,184 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 
    
 
+    <h3>landing page</h3>
+    <table class="def" id="table-term-landingPage">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20landingPage&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#landingPage"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#landingPage"
+					   data-placement="right">landing page</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="landingpage.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#landingPage
+				</td>
+			</tr>
+                        <tr id="landingpage.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				landing page
+				</td>
+			</tr>
+                        <tr id="landingpage.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A web page that provides access to the Dataset, its Distributions and/or additional information.
+				</td>
+			</tr>
+                        <tr id="landingpage.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Any kind of URL that gives access to an Asset Repository or Asset Distribution, e.g. a landing page, download, feed URL, SPARQL endpoint etc. Use dcat:accessURL when you do not have information on which it is or when it is definitely not a download.
+				</td>
+			</tr>
+                        <tr id="landingpage.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="landingpage.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="landingpage.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>language</h3>
+    <table class="def" id="table-term-language">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20language&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://purl.org/dc/terms/language"
+					   data-toggle="tooltip"
+					   data-content="http://purl.org/dc/terms/language"
+					   data-placement="right">language</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="language.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://purl.org/dc/terms/language
+				</td>
+			</tr>
+                        <tr id="language.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				language
+				</td>
+			</tr>
+                        <tr id="language.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A language of the resource.
+				</td>
+			</tr>
+                        <tr id="language.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The language of the Asset
+				</td>
+			</tr>
+                        <tr id="language.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="language.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="language.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
     <h3>modification date</h3>
     <table class="def" id="table-term-modificationDate">
                     <thead>
@@ -2778,7 +2793,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				Most recent date of change for the resource (AssetRepository, Asset or AssetDistribution)
 				</td>
 			</tr>
                         <tr id="modificationdate.domain">
@@ -2867,7 +2882,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				A string that is an identifier in the context of the identifier scheme referenced by its datatype.
 				</td>
 			</tr>
                         <tr id="notation.domain">
@@ -2956,7 +2971,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				A related Asset
 				</td>
 			</tr>
                         <tr id="relation.domain">
@@ -3045,7 +3060,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				Date of formal issuance of the resource (AssetRepository, Asset or AssetDistribution)
 				</td>
 			</tr>
                         <tr id="releasedate.domain">
@@ -3065,6 +3080,95 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				</td>
 			</tr>
                         <tr id="releasedate.subproperty">
+                                <td></td>
+                                <td>
+				   subproperty of 
+				</td>
+				<td>
+				</td>
+			</tr>
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3>theme</h3>
+    <table class="def" id="table-term-theme">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20theme&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class/Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://www.w3.org/ns/dcat#theme"
+					   data-toggle="tooltip"
+					   data-content="http://www.w3.org/ns/dcat#theme"
+					   data-placement="right">theme</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="theme.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://www.w3.org/ns/dcat#theme
+				</td>
+			</tr>
+                        <tr id="theme.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				theme
+				</td>
+			</tr>
+                        <tr id="theme.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A category of the Dataset.
+				</td>
+			</tr>
+                        <tr id="theme.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				a category of the Asset
+				</td>
+			</tr>
+                        <tr id="theme.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="theme.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td>
+				</td>
+			</tr>
+                        <tr id="theme.subproperty">
                                 <td></td>
                                 <td>
 				   subproperty of 
@@ -3134,7 +3238,7 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
 				   usage 
 				</td>
 				<td>
-				
+				A string that is an identifier in the context of the identifier scheme referenced by its datatype.
 				</td>
 			</tr>
                         <tr id="title.domain">
@@ -3275,18 +3379,18 @@ This section, therefore, provides the base principles for building an ADMS based
 
 The principles are:
 <ul>
-   <li>The main classes adms:AssetRepository, adms:Asset and adms:AssetDistribution are respectively defined as subclasses of dcat:Catalog, dcat:Dataset and dcat:Distribution. </li>
+   <li>The main classes adms:AssetRepository, adms:Asset and adms:AssetDistribution correspond to respectively dcat:Catalog, dcat:Dataset and dcat:Distribution. Depending on the scope of the profile this correspondenance can be expressed as an subclass statement in the context of that profile. </li>
    <li>Use the relations dcat:dataset (or the more generic dcat:resource) and dcat:distribution to interconnect adms:AssetRepository, adms:Asset and adms:AssetDistibution. </li>
    <li>The properties adms:last, adms:next, adms:prev have dcat:last, dcat:next, dcat:prev counterparts. It is recommended to use the DCAT ones in favor of the adms counterparts.</li>
 </ul>
-The last principle formulates that if the objective is to create a profile of DCAT, it recommended to the best extend with the DCAT specification. 
+The last principle formulates that if the objective is to create a profile of DCAT, it recommended to align to the best extent with the DCAT specification. 
 ADMS terminology should only be adopted in the profile when they precisely capture the needs. 
 
 </p><p>
 
 
 <h2>Example profile specification</h2>
-Using these principles, the original profile of DCAT for ADMS can be contructed. The orginal picture is depicted below.
+Using these principles, the original profile of DCAT for ADMS can be constructed. The original picture is depicted below.
 
     <div>
         <a href="/ADMS/releases/2.00/html/adms-as-dcat.png"
@@ -3298,7 +3402,7 @@ Using these principles, the original profile of DCAT for ADMS can be contructed.
         </a>
     </div>
 
-The properties that are included in that context are listed below.
+The table below illustrates the usage of many properties that are included in this context.
 
 <table class="simple" id="table-dcatprofile">
                     <thead>
@@ -3328,25 +3432,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
-				</td>
-         </tr>
-
-     
-		
-		   
-
-         <tr id="accessURL.uri">
-				<td>
-				access URL
-				</td>
-				<td>
-				<div class="shorten">
-				http://www.w3.org/ns/dcat#accessURL
-				</div>
-				</td>
-				<td>
-				
+				A URL that gives access to the AssetDistribution content.
 				</td>
          </tr>
 
@@ -3365,6 +3451,24 @@ The properties that are included in that context are listed below.
 				</td>
 				<td>
 				An alternative name for the Asset.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="contactpoint.uri">
+				<td>
+				contact point
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#contactPoint
+				</div>
+				</td>
+				<td>
+				Contact information that can be used for sending comments about the Asset.
 				</td>
          </tr>
 
@@ -3436,7 +3540,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				A free-text account of the resource (AssetRespository, Asset or AssetDistribution)
 				</td>
          </tr>
 
@@ -3480,6 +3584,42 @@ The properties that are included in that context are listed below.
 		
 		   
 
+         <tr id="landingpage.uri">
+				<td>
+				landing page
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#landingPage
+				</div>
+				</td>
+				<td>
+				Any kind of URL that gives access to an Asset Repository or Asset Distribution, e.g. a landing page, download, feed URL, SPARQL endpoint etc. Use dcat:accessURL when you do not have information on which it is or when it is definitely not a download.
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="language.uri">
+				<td>
+				language
+				</td>
+				<td>
+				<div class="shorten">
+				http://purl.org/dc/terms/language
+				</div>
+				</td>
+				<td>
+				The language of the Asset
+				</td>
+         </tr>
+
+     
+		
+		   
+
          <tr id="modificationdate.uri">
 				<td>
 				modification date
@@ -3490,7 +3630,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				Most recent date of change for the resource (AssetRepository, Asset or AssetDistribution)
 				</td>
          </tr>
 
@@ -3508,7 +3648,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				A string that is an identifier in the context of the identifier scheme referenced by its datatype.
 				</td>
          </tr>
 
@@ -3526,7 +3666,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				A related Asset
 				</td>
          </tr>
 
@@ -3544,7 +3684,25 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				Date of formal issuance of the resource (AssetRepository, Asset or AssetDistribution)
+				</td>
+         </tr>
+
+     
+		
+		   
+
+         <tr id="theme.uri">
+				<td>
+				theme
+				</td>
+				<td>
+				<div class="shorten">
+				http://www.w3.org/ns/dcat#theme
+				</div>
+				</td>
+				<td>
+				a category of the Asset
 				</td>
          </tr>
 
@@ -3562,7 +3720,7 @@ The properties that are included in that context are listed below.
 				</div>
 				</td>
 				<td>
-				
+				A string that is an identifier in the context of the identifier scheme referenced by its datatype.
 				</td>
          </tr>
 
@@ -3592,11 +3750,11 @@ The properties that are included in that context are listed below.
 </p>
 
 
-<h2>Example</h2>
+<h2>Data examples</h2>
 
 <p>
-This example illustrates the use of ADMS in the orginal context of a DCAT profile.
-Examples in this document are serialized in Turtle [[turtle]].
+This example illustrates the use of ADMS in the original context of a DCAT profile.
+Examples in this document are serialised in Turtle [[turtle]].
 
 </p><p>
 First, the repository description:
@@ -3670,8 +3828,6 @@ The missing triple from this example is the one that includes the Asset in the R
 </aside>
 
 
-
-
 </section>
 
  
@@ -3712,7 +3868,7 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 {'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
 {'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
 {'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
-{'pref':'dct:', 'ns': 'http://purl.org/dc/terms/'},
+{'pref':'dcterms:', 'ns': 'http://purl.org/dc/terms/'},
 {'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
 {'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
 {'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
@@ -3725,6 +3881,7 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 {'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
 {'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
 {'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
+{'pref':'xhv:', 'ns': 'http://www.w3.org/1999/xhtml/vocab#'},
 {'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
 				];
 
@@ -3745,16 +3902,20 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 	                selem.innerHTML = shorturl(selem.innerHTML.trim());
 			}
     </script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+    <script defer>
+	    document.getElementById("w3c-state").insertAdjacentText("afterbegin", "SEMIC Recommendation ");
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js"></script>
-    <script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
-    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" defer ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" defer></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js" defer></script>
+    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" defer></script>
 	<script type="text/javascript">
 	$(window).bind("load", function () {
 		$('.CodeMirror').each(function(i, el){
@@ -3767,7 +3928,6 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 		  border: 1px solid #eee;
 		  height: auto;
 		}
-
 		.buttonsample {
 		cursor: pointer;
 		margin-top: 10px;
