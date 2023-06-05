@@ -3923,8 +3923,13 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 	<script type="text/javascript" defer>
 	$(window).bind("load", function () {
 		$('.CodeMirror').each(function(i, el){
-			el.CodeMirror.refresh();
+			mydoc = el.CodeMirror.getDoc();
+			mylinenum = mydoc.lineCount();
+			for (let myline = 0; myline < mylinenum; myline++ ) {
+				mydoc.addLineClass(myline, "text", "nohighlight") 
+			}
 		});
+		
 	});
 	</script>
 	<style>
