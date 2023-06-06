@@ -3890,14 +3890,15 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
 				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
 				if (goesIn && !goesOut)
-					return 1;
+					return elem;
 				else
-					return 0;
+					return null;
 			};
 
 		$(window).scroll(function(){
-			if (elementInView($('.CodeMirror'))) {
-				$('.CodeMirror').each(function(i, el){
+			$elem = elementInView($('.CodeMirror').parent().parent())
+			if ($elem !== null) {
+				$elem.children('.CodeMirror').each(function(i, el){
 					el.CodeMirror.refresh();
 				});
 			}
