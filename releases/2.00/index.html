@@ -3897,12 +3897,10 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 
 		$(window).scroll(function(){
 			$('.CodeMirror').each(function(){
-				if (elementInView($(this)) && (!$(this).hasClass("refreshed"))){
+				if (elementInView($(this))){
 					$(this).each(function(i, el){
 						el.CodeMirror.refresh();
 					});
-					console.log($(this).parent().parent().attr('id'));
-					$(this).addClass("refreshed");
 				}
 			});
 			
