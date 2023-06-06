@@ -3896,7 +3896,7 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 			};
 
 		$(window).scroll(function(){
-			$elem = elementInView($('.CodeMirror').parent().parent())
+			$elem = elementInView($('.CodeMirror').parent().parent());
 			if ($elem !== null) {
 				$elem.children('.CodeMirror').each(function(i, el){
 					el.CodeMirror.refresh();
