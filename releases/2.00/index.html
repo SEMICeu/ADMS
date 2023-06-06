@@ -3901,6 +3901,7 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 					$(this).each(function(i, el){
 						el.CodeMirror.refresh();
 					});
+					console.log($(this).parent().parent().attr('id'));
 					$(this).addClass("refreshed");
 				}
 			});
