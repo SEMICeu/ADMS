@@ -3885,24 +3885,31 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
     <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
     <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-appear/0.1/jquery.appear.min.js"></script>
 	<script type="text/javascript">
+		
+	 $('.CodeMirror').on('appear', function(event, $all_appeared_elements) {
+		$this.each(function(i, el){
+			el.CodeMirror.refresh();
+	});
+	/*
 		function elementInView(elem){
 				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
 				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
 				if (goesIn && !goesOut)
-					return elem;
+					return 1;
 				else
-					return null;
+					return 0;
 			};
 
 		$(window).scroll(function(){
-			$elem = elementInView($('.CodeMirror').parent().parent());
-			if ($elem !== null) {
-				$elem.children('.CodeMirror').each(function(i, el){
+			if (elementInView($('.CodeMirror'))) {
+				$('.CodeMirror').each(function(i, el){
 					el.CodeMirror.refresh();
 				});
 			}
 		});
+	*/
 	</script>
 	<style>
 		.CodeMirror {
