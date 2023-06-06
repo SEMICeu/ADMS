@@ -3922,7 +3922,7 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
     <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
 	<script type="text/javascript">
 	function elementInView(elem){
-		return ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+		return $(window).scrollTop() < $(elem).offset().top + $(elem).height() ;
 	};
 
 	$(window).scroll(function(){
