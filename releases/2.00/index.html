@@ -3755,17 +3755,18 @@ The table below illustrates the usage of many properties that are included in th
 
 
 <h2>Data examples</h2>
+
 <div id="examples">
 <p>
 This example illustrates the use of ADMS in the original context of a DCAT profile.
-Examples in this document are serialised in Turtle [[turtle]].
+Examples in this document are serialised in Turtle [[turtle]] and JSON-LD [[json-ld]].
 
-</p><p>
-First, the repository description:
+</p>
+<p>First, the repository description:</p>
 <div class="h3" id="example-admsrepository">Example 1 - ADMS as DCAT profile</div>
 
 
-This assumes that the Exemplary Standards Body is described at <code>http://example.org/rdf#org</code> .
+<p>This assumes that the Exemplary Standards Body is described at <code>http://example.org/rdf#org</code> .
 
 Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'</code> for our example:
 
@@ -3776,36 +3777,26 @@ Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'<
     <li>peaches</li>
 </ul>
 
-We might describe this Asset thus:
+We might describe this Asset thus:</p>
 
 <div class="h3" id="example-fruitasset">Example 2 - Fruit Asset</div>
 
-This provides the creation date (line 2), description (line 3), publisher (line 4) and a title (line 5) for the Asset. 
+<p>This provides the creation date (line 2), description (line 3), publisher (line 4) and a title (line 5) for the Asset. 
 The status of the Asset is given in line 6 using one of the values made available in the codelists created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 7. 
 In line 8 we can see that there was a previous version of this asset <code>(Fruit_01)</code> and that the latest version can be found by appending 'Fruit' to the data's root (line 9).
 
-This Asset has two distributions linked in lines 11 and 12. One of these might be described thus:
+This Asset has two distributions linked in lines 11 and 12. One of these might be described thus:</p>
+<
+<div class="h3" id="example-fruitassetdistribution">Example 3 - Fruit Asset Distibution</div>
 
-<aside class="example" title="">
-  <pre class="nohighlight turtle">
-:Fruit_02.xml a adms:AssetDistribution ;
-  dcterms:description "XML encoding of Fruits that are found to be generally liked by most people." ;
-  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
-  dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> .
-  </pre>
-</aside>
+<p>This is a very simple description of the Asset Distribution that just gives its description, format, and license. In this example we've used the NAL File Type [[NAL-FileType]] to provide a URI for the XML MIME type.
 
-This is a very simple description of the Asset Distribution that just gives its description, format, and license. In this example we've used the NAL File Type [[NAL-FileType]] to provide a URI for the XML MIME type.
+The missing triple from this example is the one that includes the Asset in the Repository. This is done with a simple triple:</p>
 
-The missing triple from this example is the one that includes the Asset in the Repository. This is done with a simple triple:
-
-<aside class="example" title="">
-  <pre class="nohighlight turtle">
-:Repository dcat:dataset :Fruit_02 .
-  </pre>
-</aside>
+<div class="h3" id="example-fruitassetinrepository">Example 4 - Fruit Asset in Repository</div>
 
 </div>
+
 </section>
 
  
