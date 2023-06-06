@@ -3755,29 +3755,17 @@ The table below illustrates the usage of many properties that are included in th
 
 
 <h2>Data examples</h2>
-
+<div id="examples">
 <p>
 This example illustrates the use of ADMS in the original context of a DCAT profile.
 Examples in this document are serialised in Turtle [[turtle]].
 
 </p><p>
 First, the repository description:
-<aside class="example" title="">
-  <pre class="nohighlight turtle">
-
-:Repository a adms:AssetRepository ;
-  dcterms:created "1947-02-07"^^xsd:date ;
-  dcterms:description "A complete catalog of code lists and standards created by the Exemplary Standards Body"@en ;
-  dcterms:publisher <http://example.com/data#org> ;
-  dcterms:title "The Exemplary Standards Body Catalog"@en .
-  </pre>
-</aside>
-
-<div id="examples">
 <div class="h3" id="example-admsrepository">Example 1 - ADMS as DCAT profile</div>
-</div>
 
-This assumes that the Exemplary Standards Body is described at <code>http://example.com/data#org</code> .
+
+This assumes that the Exemplary Standards Body is described at <code>http://example.org/rdf#org</code> .
 
 Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'</code> for our example:
 
@@ -3790,21 +3778,7 @@ Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'<
 
 We might describe this Asset thus:
 
-<aside class="example" title="">
-  <pre class="nohighlight turtle">
-  :Fruit_02 a adms:Asset ;
-    dcterms:created "1999-05-24" ;
-    dcterms:description "Fruits that are found to be generally liked by most people." ;
-    dcterms:publisher <http://example.com/data#org> ;
-    dcterms:title "Fruit I like"@en ;
-    adms:status <http://purl.org/adms/status/Completed> ;
-    dcterms:type <http://purl.org/adms/assettype/CodeList> ;
-    adms:previous :Fruit_01 ;
-    adms:last :Fruit ;
-    dcat:distribution :Fruit_02.csv ;
-    dcat:distribution :Fruit_02.xml .
-  </pre>
-</aside>
+<div class="h3" id="example-fruitasset">Example 2 - Fruit Asset</div>
 
 This provides the creation date (line 2), description (line 3), publisher (line 4) and a title (line 5) for the Asset. 
 The status of the Asset is given in line 6 using one of the values made available in the codelists created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 7. 
@@ -3831,7 +3805,7 @@ The missing triple from this example is the one that includes the Asset in the R
   </pre>
 </aside>
 
-
+</div>
 </section>
 
  
@@ -3912,33 +3886,31 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js"></script>
-    <script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
-    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script>
 	<script type="text/javascript">
-	function elementInView(elem){
-		goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
-		goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
-		if (goesIn && !goesOut)
-			return 1;
-		else
-			return 0;
-	};
+		function elementInView(elem){
+				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
+				if (goesIn && !goesOut)
+					return 1;
+				else
+					return 0;
+			};
 
-	$(window).scroll(function(){
-		if (elementInView($('.CodeMirror'))) {
-			//fire at will!
-			$('.CodeMirror').each(function(i, el){
-				el.CodeMirror.refresh();
-			});
-		}
-	});
-		
+		$(window).scroll(function(){
+			if (elementInView($('.CodeMirror'))) {
+				$('.CodeMirror').each(function(i, el){
+					el.CodeMirror.refresh();
+				});
+			}
+		});
 	</script>
 	<style>
 		.CodeMirror {
