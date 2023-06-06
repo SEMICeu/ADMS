@@ -3921,13 +3921,17 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
     <script src="https://codemirror.net/5/mode/javascript/javascript.js"></script>
     <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
 	<script type="text/javascript">
-	$(window).bind("load", function () {
-		$('#examples').children().each(function(){
-			var $currentElement = $(this);
-			// Show element
-			console.info($currentElement);
-			$currentElement.addClass("nohighlight");
-		})
+	function elementInView(elem){
+		return ($(window).height() + $(window).scrollTop()) > $(obj).offset().top;
+	};
+
+	$(window).scroll(function(){
+		if (elementInView($('.CodeMirror'))) {
+			//fire at will!
+			$('.CodeMirror').each(function(i, el){
+				el.CodeMirror.refresh();
+			});
+		}
 	});
 		
 	</script>
