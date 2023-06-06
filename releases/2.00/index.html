@@ -3922,13 +3922,13 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
     <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js"></script>
 	<script type="text/javascript" defer>
 	$(window).bind("load", function () {
-		$('.CodeMirror').each(function(i, el){
-			mydoc = el.CodeMirror.getDoc();
-			mylinenum = mydoc.lineCount();
-			for (let myline = 0; myline < mylinenum; myline++ ) {
-				mydoc.addLineClass(myline, "text", "nohighlight") 
-			}
-		});
+		$('#examples').children().each(function(){
+			var $currentElement = $(this);
+			// Show element
+			console.info($currentElement);
+			$currentElement.addClass("nohighlight");
+			})
+		})<;
 		
 	});
 	</script>
