@@ -148,7 +148,7 @@
 	  "publisher" : "Publication Office of the EU, EU Vocabularies"
 	},
        "codelist-adms" : {
-	  "href" : "purl.org/adms/",
+	  "href" : "http://purl.org/adms",
           "title" : "Controlled Vocabularies supporting the ADMS vocabulary.",
 	  "publisher" : "European Commission, Interoperable Europe"
 	}
@@ -210,8 +210,8 @@ If a code list is published as a SKOS Concept scheme [[skos-reference]] then it 
 As a vocabulary ADMS focusses on the nature of the Assets, rather than on the organisation of the Assets in a catalogue.
 </p><p>
 
-Although ADMS has been designed from the above usage case in mind, some terms are used beyond that use case and operate in a broader context.
-For instance <code>adms:identifier</code> got a wide adoption in various vocabularies such as DCAT-AP [[dcat-ap]] and the SEMIC Core Vocabularies. 
+Although ADMS has been designed with the use case above in mind, some terms are used beyond that use case and operate in a broader context.
+For instance <code>adms:identifier</code> has received wide adoption in various vocabularies such as DCAT-AP [[dcat-ap]] and the SEMIC Core Vocabularies. 
 In this new release of ADMS this usage has been made more visible, by decoupling ADMS in a formal sense from DCAT and restricting the specification to the classes and properties defined in the ADMS namespace.
 The historic connection with DCAT has been reformulated an as usage example of ADMS.
 </p><p>
@@ -241,36 +241,36 @@ The vocabulary is also provided in different RDF serialisations [ <a href="http:
 
 <h3>History</h3>
 <p>
-ADMS was first developed by and published by the European Commission ISA Programme. Contributors included representatives of Member States of the European Union, operators of national repositories, standardisation bodies and independent experts whose work was published in April 2012 [[ADMS1]]. That document includes the original history and motivation behind the development of ADMS, as well as the business need and usage scenario for it.
+ADMS was first developed by and published by the European Commission ISA Programme. Contributors included representatives of Member States of the European Union, operators of national repositories, standardisation bodies and independent experts whose work was published in April 2012 [[ADMS1]]. That document includes the original history and motivation behind the development of ADMS, as well as the business needs and usage scenario for it.
 
 </p><p>
-Further development and review was undertaken by the Government Linked Data Working Group [[WG-GLD]]. This version of ADMS builds on the original work in a broader, global context. It also includes some changes to the original version made as a result of implementation experience, particularly on the European Commission's Joinup Platform.
-Under supervision of the Government Linked Data  Working Group a minor update has been published, which did not include any substantial changes compared to the first published version by the Working Group.
-The latest document was published as a W3C Working Group Note [[vocab-adms]] at 1 August 2013 and has not been revised since then.
+Further development and review was undertaken by the Government Linked Data Working Group [[WG-GLD]]. This version of ADMS builds on the original work in a broader, global context. It also includes some changes to the original version made as a result of implementation experience, particularly on the European Commission's JoinUp Platform.
+Under supervision of the Government Linked Data Working Group a minor update has been published, which did not include any substantial changes compared to the first published version by the Working Group.
+The latest document was published as a W3C Working Group Note [[vocab-adms]] on 1 August 2013 and has not been revised since then.
 </p>
 
 <h3>Motivation for this version</h3>
 <p>
 In the light of providing the semantic data community, and thus especially the SEMIC community,  a coherent and trusted collection of maintained vocabularies, the European Commission ( Interoperable Europe ) engaged itself to take up the active maintenance of the ADMS vocabulary. 
 In the past decade the SEMIC community of the European Commission was supporting ADMS by taking up the management of the associated controlled vocabularies and the management of an application profile, independently from the W3C note. 
-Given that initiative for this vocabulary as been taken by the European Commission and this vocabulary was not adopted as W3C recommendation, W3C and the European Commission collaborate together to provide an active maintenance of this vocabulary.
+Given that initiative for this vocabulary has been taken by the European Commission and this vocabulary was not adopted as W3C recommendation, W3C and the European Commission collaborate together to provide an active maintenance of this vocabulary.
 
 --This new release of ADMS decouples ADMS from DCAT for the terms in the vocabulary.
 </p><p>
-With the active development of DCAT and its profiles, the status of ADMS as profile of DCAT becomes unclear.
-The impact of DCAT on the ADMS vocabulary as profile of DCAT is not only on its relationship, but also on how the profile is constructed and on the adoption of some terminology.
+With the active development of DCAT and its profiles, the status of ADMS as a profile of DCAT becomes unclear.
+The impact of DCAT on the ADMS vocabulary as a profile of DCAT is not only on its relationship, but also on how the profile is constructed and on the adoption of some terminology.
 For instance, ADMS has some versioning navigation properties, but those are not adopted by DCAT but replaced by similar properties in the DCAT namespace.
-All these changes to the base vocabulary DCAT, of which ADMS declared itself originally a profile, force an adaption of ADMS.
+All these changes to the base vocabulary DCAT, of which ADMS declared itself originally a profile, force an modification of ADMS.
 Such alignment is necessary each time DCAT is updated.
 </p><p>
-With this new release ADMS is decoupled to the furthest extent possible from DCAT (no formal ties), while maintaining its original definitions.
+With this new release, ADMS is decoupled to the furthest extent possible from DCAT (no formal ties), while maintaining its original definitions.
 In essence one can consider this as a broadening of the ADMS terms.
-Doing so the lifecycle of ADMS is not anymore bound to the lifecycle of DCAT. 
+Doing so, the lifecycle of ADMS is no longer bound to the lifecycle of DCAT. 
 </p><p>
 
 While this independence offers new potential for reuse, the goal is not to create a parallel universe to DCAT.
-When cataloguing Semantic Assets is the target use case then it is highly recommended in order to first create a DCAT profile with the ADMS terms included.
-The historic dependency should facilitate the creation of such profile easily. 
+When cataloguing Semantic Assets is the target use case, it is highly recommended to first create a DCAT profile with the ADMS terms included.
+The historic dependency should easily facilitate the creation of such profile. 
 
 
 </p>
@@ -301,8 +301,8 @@ The historic dependency should facilitate the creation of such profile easily.
 
 <section id="conformance">
 <p>
-ADMS is a vocabulary that defines a collection of terms having minimal usage restrictions. 
-Usage of the terms is considered conformant with ADMS if the terms (classes and properties) from ADMS are utilised in a manner that aligns with their semantics as specified in ADMS.
+ADMS is a vocabulary that defines a collection of terms while having minimal usage restrictions. 
+Usage of the terms is considered conformant with ADMS if the terms from ADMS (classes and properties) are utilised in a manner that aligns with their semantics as specified in the ADMS vocabulary specification.
 That means the usage is conformant to 
 <ul>
 <li> the definitions and usage notes for the classes and properties, and
@@ -3372,23 +3372,23 @@ Either these are reused as-is, i.e. with no formal additional constraints compar
  
   
 <section class="informative">
-<h1>Historic interpretation of ADMS in the context of DCAT.</h1>
+<h1>Interpretation of ADMS in the context of DCAT.</h1>
 
 <p>
 ADMS was originally very tightly integrated with DCAT. 
 As motivated in the introduction [[[#specintro]]], this version decouples ADMS from DCAT.
 Nevertheless, this historic connection is important. 
-This section, therefore, provides the base principles for building an ADMS based profile of DCAT. 
+This section, therefore, provides the base principles for building an ADMS-based profile of DCAT. 
 </p><p>
 
 The principles are:
 <ul>
-   <li>The main classes adms:AssetRepository, adms:Asset and adms:AssetDistribution correspond to respectively dcat:Catalog, dcat:Dataset and dcat:Distribution. Depending on the scope of the profile this correspondenance can be expressed as an subclass statement in the context of that profile. </li>
+   <li>The main classes adms:AssetRepository, adms:Asset and adms:AssetDistribution correspond to respectively dcat:Catalog, dcat:Dataset and dcat:Distribution. Depending on the scope of the profile this correspondenance can be expressed as a subclass statement in the context of that profile. </li>
    <li>Use the relations dcat:dataset (or the more generic dcat:resource) and dcat:distribution to interconnect adms:AssetRepository, adms:Asset and adms:AssetDistibution. </li>
-   <li>The properties adms:last, adms:next, adms:prev have dcat:last, dcat:next, dcat:prev counterparts. It is recommended to use the DCAT ones in favor of the adms counterparts.</li>
+   <li>The properties adms:last, adms:next, adms:prev have dcat:last, dcat:next, dcat:prev counterparts. It is recommended to use the DCAT ones in favour of the ADMS counterparts.</li>
 </ul>
-The last principle formulates that if the objective is to create a profile of DCAT, it recommended to align to the best extent with the DCAT specification. 
-ADMS terminology should only be adopted in the profile when they precisely capture the needs. 
+The last principle formulates that if the objective is to create a profile of DCAT, it is recommended to align, to the best extent, with the DCAT specification. 
+ADMS terminology should only be adopted in the profile when it precisely captures the needs. 
 
 </p><p>
 
@@ -3777,15 +3777,15 @@ Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'<
     <li>peaches</li>
 </ul>
 
-We might describe this Asset thus:</p>
+We might describe this Asset as:</p>
 
 <div class="h3" id="example-fruitasset">Example 2 - Fruit Asset</div>
 
 <p>This provides the creation date (line 8), description (line 9), publisher (line 10) and a title (line 11) for the Asset. 
-The status of the Asset is given in line 12 using one of the values made available in the codelists created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 13. 
+The status of the Asset is given in line 12 using one of the values made available in the codelists, created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 13. 
 In line 14 we can see that there was a previous version of this asset <code>(Fruit_01)</code> and that the latest version can be found by appending 'Fruit' to the data's root (line 15).
 
-This Asset has two distributions linked in lines 16 and 17. One of these might be described thus:</p>
+This Asset has two distributions linked in lines 16 and 17. One of these might be described as:</p>
 
 <div class="h3" id="example-fruitassetdistribution">Example 3 - Fruit Asset Distibution</div>
 
