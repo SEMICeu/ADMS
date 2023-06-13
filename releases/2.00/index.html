@@ -3756,14 +3756,13 @@ Using these principles, the original profile of DCAT for ADMS can be constructed
 
 <h2>Data examples</h2>
 
-<div id="examples">
 <p>
 This example illustrates the use of ADMS in the original context of a DCAT profile.
 Examples in this document are serialised in Turtle [[turtle]] and JSON-LD [[json-ld]].
 
 </p>
 <p>First, the repository description:</p>
-<div class="h3" id="example-admsrepository">Example 1 - ADMS as DCAT profile</div>
+<div class="h3 examples" id="example-admsrepository">Example 1 - ADMS as DCAT profile</div>
 
 
 <p>This assumes that the Exemplary Standards Body is described at <code>http://example.org/rdf#org</code> .
@@ -3779,7 +3778,7 @@ Next, an Asset. We'll create an imaginary code list called <code>'Fruit I like'<
 
 We might describe this Asset as:</p>
 
-<div class="h3" id="example-fruitasset">Example 2 - Fruit Asset</div>
+<div class="h3 examples" id="example-fruitasset">Example 2 - Fruit Asset</div>
 
 <p>This provides the creation date (line 8), description (line 9), publisher (line 10) and a title (line 11) for the Asset. 
 The status of the Asset is given in line 12 using one of the values made available in the codelists, created in the context of the first version of ADMS [[codelist-adms]] . Likewise the type of Asset in line 13. 
@@ -3787,15 +3786,14 @@ In line 14 we can see that there was a previous version of this asset <code>(Fru
 
 This Asset has two distributions linked in lines 16 and 17. One of these might be described as:</p>
 
-<div class="h3" id="example-fruitassetdistribution">Example 3 - Fruit Asset Distibution</div>
+<div class="h3 examples" id="example-fruitassetdistribution">Example 3 - Fruit Asset Distibution</div>
 
 <p>This is a very simple description of the Asset Distribution that just gives its description, format, and license. In this example we've used the NAL File Type [[NAL-FileType]] to provide a URI for the XML MIME type.
 
 The missing triple from this example is the one that includes the Asset in the Repository. This is done with a simple triple:</p>
 
-<div class="h3" id="example-fruitassetinrepository">Example 4 - Fruit Asset in Repository</div>
+<div class="h3 examples" id="example-fruitassetinrepository">Example 4 - Fruit Asset in Repository</div>
 
-</div>
 
 </section>
 
@@ -3876,15 +3874,15 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
     <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
-    <script src="https://semiceu.github.io/MLDCAT-AP/releases/1.0.0/example.js" ></script>
+    <script src="./html/example.js" ></script>
 	<script type="text/javascript">
 		function elementInView(elem){
 				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
