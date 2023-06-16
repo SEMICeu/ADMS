@@ -1,3 +1,4 @@
+![SEMIC Core Vocabulary](/semic-icon-small.png)
 # ADMS
 
 This is the issue tracker for the maintenance of the ADMS Vocabulary.
