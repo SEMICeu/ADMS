@@ -49,14 +49,170 @@
       "foaf:mbox": "mailto:bert.van.nuffelen@tenforce.com"
     }
   ],
-  "contributors": [],
+  "contributors": [
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Alberto",
+      "foaf:lastName": "Abella"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Riitta",
+      "foaf:lastName": "Alkula"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Peter",
+      "foaf:lastName": "Bruhn Andersen"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Ales",
+      "foaf:lastName": "Cernivec"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Eugeniu",
+      "foaf:lastName": "Costetchi"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Jitse",
+      "foaf:lastName": "De Cock"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Pascal",
+      "foaf:lastName": "Derycke"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Ilias",
+      "foaf:lastName": "Dimopoulos"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Petro",
+      "foaf:lastName": "Dudi"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Ana Rosa",
+      "foaf:lastName": "Guzmán"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Irène",
+      "foaf:lastName": "Kesisoglou"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Touré",
+      "foaf:lastName": "Lanciné"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Giorgia",
+      "foaf:lastName": "Lodi"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Peter",
+      "foaf:lastName": "Lubrich"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Italo",
+      "foaf:lastName": "Mairo"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Thies",
+      "foaf:lastName": "Mesdag"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Joachim",
+      "foaf:lastName": "Nielandt"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Geraldine",
+      "foaf:lastName": "Nolf"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Csongor",
+      "foaf:lastName": "Nyulas"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Hans",
+      "foaf:lastName": "Overbeeck"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Matthias",
+      "foaf:lastName": "Palmér"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Mihai",
+      "foaf:lastName": "Paunescu"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Hector",
+      "foaf:lastName": "Rico Lorenzo"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Ludger",
+      "foaf:lastName": "Rinsche"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Fidel",
+      "foaf:lastName": "Santiago"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Mantas",
+      "foaf:lastName": "Sekmokas"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Enric",
+      "foaf:lastName": "Staromiejski"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Kees",
+      "foaf:lastName": "Trautwein"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "William",
+      "foaf:lastName": "Verbeeck"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Jim",
+      "foaf:lastName": "Yang"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Willem",
+      "foaf:lastName": "van Gemert"
+    }
+  ],
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "issued": "TODO",
   "navigation": {
     "prev": "https://www.w3.org/TR/vocab-adms"
   },
-  "publication-state": "https://www.w3.org/2021/Process-20211102/#RecsWD",
-  "publication-date": "2023-05-16",
+  "publication-state": "htpps://www.w3.org/2021/Process-20211102/#RecsCR",
+  "publication-date": "2023-06-21",
   "classes": [
     {
       "@id": "http://www.w3.org/ns/adms#Asset",
@@ -65,7 +221,7 @@
         "en": "Asset"
       },
       "definition": {
-        "en": "An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)"
+        "en": "An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)."
       },
       "parents": []
     },
