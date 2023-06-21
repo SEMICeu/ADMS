@@ -6,6 +6,7 @@ The Asset Description Metadata Schema (ADMS) is a vocabulary to describe reusabl
 
 The ADMS specification was originally drafted to describe semantic interoperability solutions (previously referred to as semantic assets). This application profile of ADMS aims to extend the use of ADMS for the description of other types of interoperability solutions, meaning solutions covering the political, legal, organisational and technical interoperability layers defined by the European Interoperability Framework [https://ec.europa.eu/isa2/eif](https://ec.europa.eu/isa2/eif).
 
+The latest specification is ADMS 2.00, it can be found at [https://semiceu.github.io/ADMS/releases/2.00/](https://semiceu.github.io/ADMS/releases/2.00/).
 With this new release (2.00) ADMS is decoupled to the furthest extent possible from DCAT (no formal ties), while maintaining its original definitions. In essence one can consider this as a broadening of the ADMS terms. Doing so the lifecycle of ADMS is not anymore bound to the lifecycle of DCAT.
 
 Copyright © 2023 European Union. All material in this repository is published under the licence CC-BY 4.0, unless explicitly otherwise mentioned.
