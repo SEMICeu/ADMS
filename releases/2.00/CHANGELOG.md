@@ -16,4 +16,5 @@ May 2023
  - change the class and property tabular specification so that the rows only appear when there is a value in the specification.
  - add new logo for SEMIC
 
-
+Nov 2023
+ - minor editorial adaptation to disambiguate the W3C process from the SEMIC process.
