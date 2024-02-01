@@ -21,6 +21,16 @@
 	    
 		
 		   {
+		    name: "Jitse De Cock",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
 		    name: "Makx Dekkers",
 		      
 		      
@@ -42,18 +52,8 @@
 		    name: "Natasa Sofou",
 		      
 		      
+		    company: "Trasys International",
 		      
-		    }
-		, 
-		
-		   {
-		    name: "Bert Van Nuffelen",
-		      
-		      
-		    company: "TenForce",
-		      
-		      
-		    mailto: "bert.van.nuffelen@tenforce.com"
 		      
 		    }
 		
@@ -72,11 +72,13 @@
 	    
 		
 		   {
-		    name: "Pavlina Fragkou",
+		    name: "Bert Van Nuffelen",
 		      
 		      
-		    company: "SEMIC EU",
+		    company: "Digitaal Vlaanderen",
 		      
+		      
+		    mailto: "bert.van.nuffelen@tenforce.com"
 		      
 		    }
 		
@@ -89,17 +91,32 @@
 	
 	
 		]
+    var myowners = [
+            {
+                value: "SEMIC",
+                href: "https://joinup.ec.europa.eu/collection/semic-support-centre",
+            },
+            {
+                value: "Pavlina Fragkou (DG DIGIT)",
+            },
+		]
 
 
    
 
     var respecConfig = {
-      edDraftURI: "https://semiceu.github.io//ADMS/releases/2.00",
-      latestVersion: "https://semiceu.github.io//ADMS/releases/2.00",
+      edDraftURI: "https://semiceu.github.io/ADMS/releases/2.00",
+      latestVersion: "https://semiceu.github.io/ADMS/releases/2.00",
       specStatus: "base",
-      publishDate: "2023-06-21",
+      publishDate: "2024-02-01",
       editors: myeditors,
       authors: myauthors,
+      otherLinks: [
+        {
+          key: "Owners:",
+          data: myowners
+        }
+      ],
       github: "SEMICeu/ADMS",
       shortName: "ADMS Vocabulary",
       xref: "web-platform",
@@ -236,7 +253,7 @@ The vocabulary is also provided in different RDF serialisations [ <a href="http:
 <section id="specstatus" class="informative">
     <h2>Status</h2>
         <p>
-            This vocabulary has the status SEMIC Candidate Recommendation published at 2023-06-21.
+            This vocabulary has the status SEMIC Recommendation published at 2024-02-01.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/ADMS/blob/main/releases/2.00/CHANGELOG.md">Changelog</a>.
@@ -3837,9 +3854,6 @@ Past and current contributors are :
 		, 
            
 	 	Eugeniu Costetchi
-		, 
-           
-	 	Jitse De Cock
 		, 
            
 	 	Pascal Derycke

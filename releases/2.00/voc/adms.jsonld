@@ -14,13 +14,22 @@
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:name": "SEMIC EU"
+        "foaf:name": "Digitaal Vlaanderen"
       },
-      "foaf:firstName": "Pavlina",
-      "foaf:lastName": "Fragkou"
+      "foaf:firstName": "Bert",
+      "foaf:lastName": "Van Nuffelen",
+      "foaf:mbox": "mailto:bert.van.nuffelen@tenforce.com"
     }
   ],
   "editors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Jitse",
+      "foaf:lastName": "De Cock"
+    },
     {
       "@type": "foaf:Person",
       "foaf:firstName": "Makx",
@@ -36,17 +45,11 @@
     },
     {
       "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Trasys International"
+      },
       "foaf:firstName": "Natasa",
       "foaf:lastName": "Sofou"
-    },
-    {
-      "@type": "foaf:Person",
-      "affiliation": {
-        "foaf:name": "TenForce"
-      },
-      "foaf:firstName": "Bert",
-      "foaf:lastName": "Van Nuffelen",
-      "foaf:mbox": "mailto:bert.van.nuffelen@tenforce.com"
     }
   ],
   "contributors": [
@@ -74,11 +77,6 @@
       "@type": "foaf:Person",
       "foaf:firstName": "Eugeniu",
       "foaf:lastName": "Costetchi"
-    },
-    {
-      "@type": "foaf:Person",
-      "foaf:firstName": "Jitse",
-      "foaf:lastName": "De Cock"
     },
     {
       "@type": "foaf:Person",
@@ -211,8 +209,8 @@
   "navigation": {
     "prev": "https://www.w3.org/TR/vocab-adms"
   },
-  "publication-state": "htpps://www.w3.org/2021/Process-20211102/#RecsCR",
-  "publication-date": "2023-06-21",
+  "publication-state": "https://www.w3.org/2023/Process-20231103/#RecsW3C",
+  "publication-date": "2024-02-01",
   "classes": [
     {
       "@id": "http://www.w3.org/ns/adms#Asset",
@@ -711,7 +709,7 @@
       "@type": "@id"
     },
     "usage": {
-      "@id": "vann:usageNote",
+      "@id": "skos:scopeNote",
       "@container": "@language"
     },
     "parents": {
