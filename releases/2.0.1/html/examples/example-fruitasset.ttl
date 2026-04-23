@@ -1,0 +1,17 @@
+prefix : <http://www.example.org/rdf#>
+prefix adms: <http://www.w3.org/ns/adms#>
+prefix dcat: <http://www.w3.org/ns/dcat#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Fruit_02 a adms:Asset ;
+  dcterms:created "1999-05-24" ;
+  dcterms:description "Fruits that are found to be generally liked by most people." ;
+  dcterms:publisher :org;
+  dcterms:title "Fruit I like"@en ;
+  adms:status <http://purl.org/adms/status/Completed> ;
+  dcterms:type <http://purl.org/adms/assettype/CodeList> ;
+  adms:previous :Fruit_01 ;
+  adms:last :Fruit ;
+  dcat:distribution :Fruit_02.csv ;
+  dcat:distribution :Fruit_02.xml .

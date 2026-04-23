@@ -1,0 +1,8 @@
+prefix : <http://www.example.org/rdf#>
+prefix adms: <http://www.w3.org/ns/adms#>
+prefix dcterms: <http://purl.org/dc/terms/>
+
+:Fruit_02.xml a adms:AssetDistribution ;
+  dcterms:description "XML encoding of Fruits that are found to be generally liked by most people." ;
+  dcterms:license <http://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> .
