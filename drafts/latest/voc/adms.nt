@@ -1,0 +1,265 @@
+<http://www.w3.org/ns/adms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/mediator> _:g462560 .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2000/01/rdf-schema#label> "adms"@en .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2000/01/rdf-schema#label> "adms"@nl .
+<http://www.w3.org/ns/adms> <http://xmlns.com/foaf/0.1/maker> _:g462580 .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2001/02pd/rec54#editor> _:g462620 .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2001/02pd/rec54#editor> _:g462660 .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2001/02pd/rec54#editor> _:g462700 .
+<http://www.w3.org/ns/adms> <http://www.w3.org/2001/02pd/rec54#editor> _:g462740 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462780 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462800 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462820 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462840 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462860 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462880 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462900 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462920 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462940 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462960 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g462980 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463000 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463020 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463040 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463060 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463080 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463100 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463120 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463140 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463160 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463180 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463200 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463220 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463240 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463260 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463280 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463300 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463320 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463340 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463360 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463380 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/contributor> _:g463400 .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://www.w3.org/ns/adms> <http://purl.org/dc/terms/issued> "2026-05-18" .
+<http://www.w3.org/ns/adms#Asset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/adms#Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset"@en .
+<http://www.w3.org/ns/adms#Asset> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work)."@en .
+<http://www.w3.org/ns/adms#AssetDistribution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#AssetDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/adms#AssetDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Asset Distribution"@en .
+<http://www.w3.org/ns/adms#AssetDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work)."@en .
+<http://www.w3.org/ns/adms#AssetRepository> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#AssetRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/adms#AssetRepository> <http://www.w3.org/2000/01/rdf-schema#label> "Asset repository"@en .
+<http://www.w3.org/ns/adms#AssetRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions."@en .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier"@en .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "This is based on the UN/CEFACT Identifier class."@en .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/2004/02/skos/core#scopeNote> "An identifier in a particular context, consisting of the \r\n<ul>\r\n<li>content string that is the identifier;</li>\r\n<li>an optional identifier for the identifier scheme; </li>\r\n<li>an optional identifier for the version of the identifier scheme;</li>\r\n<li>an optional identifier for the agency that manages the identifier scheme.</li>"@en .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a resource to an adms:Identifier class."@en .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/adms#Identifier> .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/2000/01/rdf-schema#label> "included asset"@en .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document."@en .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/adms#Asset> .
+<http://www.w3.org/ns/adms#includedAsset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/adms#Asset> .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "interoperability level"@en .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "The interoperability level for which the Asset is relevant."@en .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/adms#Asset> .
+<http://www.w3.org/ns/adms#interoperabilityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#label> "last"@en .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to the current or latest version of the Asset."@en .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#last> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/xhtml/vocab#last> .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#label> "next"@en .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to the next version of the Asset."@en .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#next> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/xhtml/vocab#next> .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#label> "prev"@en .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to the previous version of the Asset."@en .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#prev> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/1999/xhtml/vocab#prev> .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/2000/01/rdf-schema#label> "representation technique"@en .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/2000/01/rdf-schema#comment> "More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique)."@en .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#representationTechnique> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#label> "sample"@en .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#comment> "Links to a sample of an Asset (which is itself an Asset)."@en .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#sample> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#label> "schema agency"@en .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the agency that issued the identifier."@en .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/adms#Identifier> .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@en .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#comment> "The status of the Asset in the context of a particular workflow process."@en .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/2000/01/rdf-schema#label> "supported schema"@en .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/2000/01/rdf-schema#comment> "A schema according to which the Asset Repository can provide data about its content, e.g. ADMS."@en .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#supportedSchema> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/adms#Asset> .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/2000/01/rdf-schema#label> "translation"@en .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/2000/01/rdf-schema#comment> "Links Assets that are translations of each other."@en .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#translation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/adms> .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/2000/01/rdf-schema#label> "version notes"@en .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of changes between this version and the previous version of the Asset."@en .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Resource> .
+<http://www.w3.org/ns/adms#versionNotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:g462560 <http://xmlns.com/foaf/0.1/homepage> <https://semic.eu> .
+_:g462560 <http://xmlns.com/foaf/0.1/name> "Semantic Interoperability Community (SEMIC)" .
+_:g462580 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462580 <https://schema.org/affiliation> _:g462600 .
+_:g462580 <http://xmlns.com/foaf/0.1/firstName> "Bert" .
+_:g462580 <http://xmlns.com/foaf/0.1/lastName> "Van Nuffelen" .
+_:g462580 <http://xmlns.com/foaf/0.1/mbox> <mailto:bert.van.nuffelen@tenforce.com> .
+_:g462600 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:g462620 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462620 <https://schema.org/affiliation> _:g462640 .
+_:g462620 <http://xmlns.com/foaf/0.1/firstName> "Jitse" .
+_:g462620 <http://xmlns.com/foaf/0.1/lastName> "De Cock" .
+_:g462640 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g462660 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462660 <https://schema.org/affiliation> _:g462680 .
+_:g462660 <http://xmlns.com/foaf/0.1/firstName> "Faruk" .
+_:g462660 <http://xmlns.com/foaf/0.1/lastName> "Karabulut" .
+_:g462680 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g462700 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462700 <https://schema.org/affiliation> _:g462720 .
+_:g462700 <http://xmlns.com/foaf/0.1/firstName> "Natasa" .
+_:g462700 <http://xmlns.com/foaf/0.1/lastName> "Sofou" .
+_:g462720 <http://xmlns.com/foaf/0.1/name> "EC" .
+_:g462740 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462740 <https://schema.org/affiliation> _:g462760 .
+_:g462740 <http://xmlns.com/foaf/0.1/firstName> "Emidio" .
+_:g462740 <http://xmlns.com/foaf/0.1/lastName> "Stani" .
+_:g462760 <http://xmlns.com/foaf/0.1/name> "PwC EU Services" .
+_:g462780 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462780 <http://xmlns.com/foaf/0.1/firstName> "Alberto" .
+_:g462780 <http://xmlns.com/foaf/0.1/lastName> "Abella" .
+_:g462800 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462800 <http://xmlns.com/foaf/0.1/firstName> "Riitta" .
+_:g462800 <http://xmlns.com/foaf/0.1/lastName> "Alkula" .
+_:g462820 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462820 <http://xmlns.com/foaf/0.1/firstName> "Peter" .
+_:g462820 <http://xmlns.com/foaf/0.1/lastName> "Bruhn Andersen" .
+_:g462840 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462840 <http://xmlns.com/foaf/0.1/firstName> "Ales" .
+_:g462840 <http://xmlns.com/foaf/0.1/lastName> "Cernivec" .
+_:g462860 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462860 <http://xmlns.com/foaf/0.1/firstName> "Eugeniu" .
+_:g462860 <http://xmlns.com/foaf/0.1/lastName> "Costetchi" .
+_:g462880 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462880 <http://xmlns.com/foaf/0.1/firstName> "Makx" .
+_:g462880 <http://xmlns.com/foaf/0.1/lastName> "Dekkers" .
+_:g462900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462900 <http://xmlns.com/foaf/0.1/firstName> "Pascal" .
+_:g462900 <http://xmlns.com/foaf/0.1/lastName> "Derycke" .
+_:g462920 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462920 <http://xmlns.com/foaf/0.1/firstName> "Ilias" .
+_:g462920 <http://xmlns.com/foaf/0.1/lastName> "Dimopoulos" .
+_:g462940 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462940 <http://xmlns.com/foaf/0.1/firstName> "Petro" .
+_:g462940 <http://xmlns.com/foaf/0.1/lastName> "Dudi" .
+_:g462960 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462960 <http://xmlns.com/foaf/0.1/firstName> "Pavlina" .
+_:g462960 <http://xmlns.com/foaf/0.1/lastName> "Fragkou" .
+_:g462980 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g462980 <http://xmlns.com/foaf/0.1/firstName> "Ana Rosa" .
+_:g462980 <http://xmlns.com/foaf/0.1/lastName> "Guzmán" .
+_:g463000 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463000 <http://xmlns.com/foaf/0.1/firstName> "Irène" .
+_:g463000 <http://xmlns.com/foaf/0.1/lastName> "Kesisoglou" .
+_:g463020 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463020 <http://xmlns.com/foaf/0.1/firstName> "Touré" .
+_:g463020 <http://xmlns.com/foaf/0.1/lastName> "Lanciné" .
+_:g463040 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463040 <http://xmlns.com/foaf/0.1/firstName> "Giorgia" .
+_:g463040 <http://xmlns.com/foaf/0.1/lastName> "Lodi" .
+_:g463060 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463060 <http://xmlns.com/foaf/0.1/firstName> "Peter" .
+_:g463060 <http://xmlns.com/foaf/0.1/lastName> "Lubrich" .
+_:g463080 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463080 <http://xmlns.com/foaf/0.1/firstName> "Italo" .
+_:g463080 <http://xmlns.com/foaf/0.1/lastName> "Mairo" .
+_:g463100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463100 <http://xmlns.com/foaf/0.1/firstName> "Thies" .
+_:g463100 <http://xmlns.com/foaf/0.1/lastName> "Mesdag" .
+_:g463120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463120 <http://xmlns.com/foaf/0.1/firstName> "Joachim" .
+_:g463120 <http://xmlns.com/foaf/0.1/lastName> "Nielandt" .
+_:g463140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463140 <http://xmlns.com/foaf/0.1/firstName> "Geraldine" .
+_:g463140 <http://xmlns.com/foaf/0.1/lastName> "Nolf" .
+_:g463160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463160 <http://xmlns.com/foaf/0.1/firstName> "Csongor" .
+_:g463160 <http://xmlns.com/foaf/0.1/lastName> "Nyulas" .
+_:g463180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463180 <http://xmlns.com/foaf/0.1/firstName> "Hans" .
+_:g463180 <http://xmlns.com/foaf/0.1/lastName> "Overbeeck" .
+_:g463200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463200 <http://xmlns.com/foaf/0.1/firstName> "Matthias" .
+_:g463200 <http://xmlns.com/foaf/0.1/lastName> "Palmér" .
+_:g463220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463220 <http://xmlns.com/foaf/0.1/firstName> "Mihai" .
+_:g463220 <http://xmlns.com/foaf/0.1/lastName> "Paunescu" .
+_:g463240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463240 <http://xmlns.com/foaf/0.1/firstName> "Hector" .
+_:g463240 <http://xmlns.com/foaf/0.1/lastName> "Rico Lorenzo" .
+_:g463260 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463260 <http://xmlns.com/foaf/0.1/firstName> "Ludger" .
+_:g463260 <http://xmlns.com/foaf/0.1/lastName> "Rinsche" .
+_:g463280 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463280 <http://xmlns.com/foaf/0.1/firstName> "Fidel" .
+_:g463280 <http://xmlns.com/foaf/0.1/lastName> "Santiago" .
+_:g463300 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463300 <http://xmlns.com/foaf/0.1/firstName> "Mantas" .
+_:g463300 <http://xmlns.com/foaf/0.1/lastName> "Sekmokas" .
+_:g463320 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463320 <http://xmlns.com/foaf/0.1/firstName> "Enric" .
+_:g463320 <http://xmlns.com/foaf/0.1/lastName> "Staromiejski" .
+_:g463340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463340 <http://xmlns.com/foaf/0.1/firstName> "Kees" .
+_:g463340 <http://xmlns.com/foaf/0.1/lastName> "Trautwein" .
+_:g463360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463360 <http://xmlns.com/foaf/0.1/firstName> "William" .
+_:g463360 <http://xmlns.com/foaf/0.1/lastName> "Verbeeck" .
+_:g463380 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463380 <http://xmlns.com/foaf/0.1/firstName> "Jim" .
+_:g463380 <http://xmlns.com/foaf/0.1/lastName> "Yang" .
+_:g463400 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:g463400 <http://xmlns.com/foaf/0.1/firstName> "Willem" .
+_:g463400 <http://xmlns.com/foaf/0.1/lastName> "van Gemert" .

@@ -32,24 +32,27 @@
     },
     {
       "@type": "foaf:Person",
-      "foaf:firstName": "Makx",
-      "foaf:lastName": "Dekkers"
-    },
-    {
-      "@type": "foaf:Person",
       "affiliation": {
-        "foaf:name": "SEMIC EU"
+        "foaf:name": "PwC EU Services"
       },
-      "foaf:firstName": "Pavlina",
-      "foaf:lastName": "Fragkou"
+      "foaf:firstName": "Faruk",
+      "foaf:lastName": "Karabulut"
     },
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:name": "Trasys International"
+        "foaf:name": "EC"
       },
       "foaf:firstName": "Natasa",
       "foaf:lastName": "Sofou"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC EU Services"
+      },
+      "foaf:firstName": "Emidio",
+      "foaf:lastName": "Stani"
     }
   ],
   "contributors": [
@@ -80,6 +83,11 @@
     },
     {
       "@type": "foaf:Person",
+      "foaf:firstName": "Makx",
+      "foaf:lastName": "Dekkers"
+    },
+    {
+      "@type": "foaf:Person",
       "foaf:firstName": "Pascal",
       "foaf:lastName": "Derycke"
     },
@@ -92,6 +100,11 @@
       "@type": "foaf:Person",
       "foaf:firstName": "Petro",
       "foaf:lastName": "Dudi"
+    },
+    {
+      "@type": "foaf:Person",
+      "foaf:firstName": "Pavlina",
+      "foaf:lastName": "Fragkou"
     },
     {
       "@type": "foaf:Person",
@@ -207,10 +220,10 @@
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "issued": "TODO",
   "navigation": {
-    "prev": "https://www.w3.org/TR/vocab-adms"
+    "prev": "https://semiceu.github.io/ADMS/releases/2.00"
   },
   "publication-state": "https://www.w3.org/2023/Process-20231103/#RecsW3C",
-  "publication-date": "2024-02-01",
+  "publication-date": "2026-05-18",
   "classes": [
     {
       "@id": "http://www.w3.org/ns/adms#Asset",

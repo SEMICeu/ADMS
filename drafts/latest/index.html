@@ -31,18 +31,10 @@
 		, 
 		
 		   {
-		    name: "Makx Dekkers",
+		    name: "Faruk Karabulut",
 		      
 		      
-		      
-		    }
-		, 
-		
-		   {
-		    name: "Pavlina Fragkou",
-		      
-		      
-		    company: "SEMIC EU",
+		    company: "PwC EU Services",
 		      
 		      
 		    }
@@ -52,7 +44,17 @@
 		    name: "Natasa Sofou",
 		      
 		      
-		    company: "Trasys International",
+		    company: "EC",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Emidio Stani",
+		      
+		      
+		    company: "PwC EU Services",
 		      
 		      
 		    }
@@ -97,7 +99,7 @@
                 href: "https://joinup.ec.europa.eu/collection/semic-support-centre",
             },
             {
-                value: "Pavlina Fragkou (DG DIGIT)",
+                value: "Georges Lobo (DG DIGIT)",
             },
 		]
 
@@ -105,17 +107,25 @@
    
 
     var respecConfig = {
-      edDraftURI: "https://semiceu.github.io/ADMS/releases/2.00",
+      edDraftURI: "https://semiceu.github.io/ADMS/drafts/latest",
       latestVersion: "https://semiceu.github.io/ADMS/releases/2.00",
       specStatus: "base",
-      publishDate: "2024-02-01",
+      publishDate: "2026-05-18",
       editors: myeditors,
       authors: myauthors,
       otherLinks: [
         {
           key: "Owners:",
           data: myowners
-        }
+        },
+        {
+	  key: "Previous version:",
+	  data: [ { value : "https://semiceu.github.io/ADMS/releases/2.00", href : "https://semiceu.github.io/ADMS/releases/2.00" } ]
+	},
+        {
+	  key: "This version:",
+	  data: [ { value : "https://semiceu.github.io/ADMS/drafts/latest", href : "https://semiceu.github.io/ADMS/drafts/latest" } ]
+	}
       ],
       github: "SEMICeu/ADMS",
       shortName: "ADMS Vocabulary",
@@ -195,21 +205,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msapplication-TileColor" content="#7ED956" />
-<!-- Matomo -->
-<script>
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//health.semic.eu/matomo/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '8']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Matomo Code -->
 </head>
 <body>
     
@@ -259,6 +254,7 @@ The vocabulary is also provided in different RDF serialisations [ <a href="http:
     <h2>Meeting minutes</h2>
     <ul>
     <li>Webinar 25 April 2023 (<a href="https://joinup.ec.europa.eu/sites/default/files/inline-files/20230425%20Webinar%20ADMS_ADMS-AP.pdf">Meeting Minutes</a>, <a href="https://www.youtube.com/watch?v=tYFxDH1fnhU">recording</a>, <a href="https://joinup.ec.europa.eu/sites/default/files/inline-files/webinar_adms_v1.0.pdf">slides</a>) </li>
+    <li>Webinar 17 June 2026 (<a href="https://interoperable-europe.ec.europa.eu/sites/default/files/event/attachment/2025-09/20250617-meeting-minutes-webinar-core-vocabularies.pdf">Meeting Minutes</a>, <a href="https://youtu.be/IxzkRdBcOrA?si=mPAJODXHk6CgwGh7">recording</a>, <a href="https://interoperable-europe.ec.europa.eu/sites/default/files/event/attachment/2025-06/SEMIC_Webinar_Core_Vocabulary_17_06_2025.pdf">slides</a>) </li>
     </ul>
 </p>
 </section>
@@ -268,7 +264,7 @@ The vocabulary is also provided in different RDF serialisations [ <a href="http:
 <section id="specstatus" class="informative">
     <h2>Status</h2>
         <p>
-            This vocabulary has the status SEMIC Recommendation published at 2024-02-01.
+            This vocabulary has the status SEMIC Draft Specification published at 2026-05-18.
         </p>
         <p>
             Information about the process and the decisions involved in the creation of this specification are consultable at the <a href="https://github.com/SEMICeu/ADMS/blob/main/releases/2.00/CHANGELOG.md">Changelog</a>.
@@ -421,9 +417,9 @@ In this vocabulary the rdfs:Resource class is used to denote any possible resour
                 
     </div>
     <div>
-        <a href="/ADMS/releases/2.00/html/overview.jpg"
+        <a href="/ADMS/drafts/latest/html/overview.jpg"
            target="_blank">
-            <img src="/ADMS/releases/2.00/html/overview.jpg"/>
+            <img src="/ADMS/drafts/latest/html/overview.jpg"/>
         </a>
     </div>
 
@@ -670,7 +666,6 @@ This section lists the classes matching the base namespace of this vocabulary.
 <li>content string that is the identifier;</li>
 <li>an optional identifier for the identifier scheme; </li>
 <li>an optional identifier for the version of the identifier scheme;</li>
-
 <li>an optional identifier for the agency that manages the identifier scheme.</li>
 				</td>
 			</tr>
@@ -3433,10 +3428,10 @@ ADMS terminology should only be adopted in the profile when it precisely capture
 Using these principles, the original profile of DCAT for ADMS can be constructed. The original picture is depicted below.
 
     <div>
-        <a href="/ADMS/releases/2.00/html/adms-as-dcat.png"
+        <a href="/ADMS/drafts/latest/html/adms-as-dcat.png"
            target="_blank">
            <figure id="figure">
-            <img src="/ADMS/releases/2.00/html/adms-as-dcat.png"/>
+            <img src="/ADMS/drafts/latest/html/adms-as-dcat.png"/>
 	    <figcaption>ADMS as DCAT profile</figcaption>
 	   </figure>
         </a>
@@ -3833,678 +3828,10 @@ The missing triple from this example is the one that includes the Asset in the R
 
 </section>
 
+  <section data-include="identifier.html"></section>
  
-<section class="informative">
-<h1>ADMS Core Vocabularies</h1>
-<h2>Motivation for this vocabulary</h2>
-<p>
-This vocabulary is motivated by the need to provide a precise and interoperable semantic model for identifiers and identifier schemes, in line with recent modelling practices and international alignment efforts.
-Experience across multiple data modelling initiatives has shown that identifiers cannot be treated as simple literal values, nor can multiple identifiers associated with the same entity be assumed to be semantically equivalent.
-</p>
-<p>
-In particular, it has become clear that an identifier and the system or scheme that defines its meaning represent distinct concepts.
-An identifier denotes a specific value assigned to an entity, while an identifier scheme provides the contextual semantics that explain how that value was issued, governed, and interpreted.
-Modelling these concerns within a single construct obscures this distinction and limits the ability to describe identifier schemes as reusable, globally addressable resources.
-</p>
-<p>
-Earlier approaches, including the original <code>adms:Identifier</code> pattern, allowed identifier scheme information to be embedded within the identifier itself.
-While functionally sufficient, this approach has proven difficult to apply consistently, as implementers naturally expect to state that an entity “has an identifier”, without collapsing different identifiers into a single semantic identity.
-Explicitly separating identifiers from identifier schemes resolves this ambiguity and avoids unintended assumptions equivalent to <code>owl:sameAs</code>.
-</p>
-
-<p>
-This revision aligns with the modelling principles adopted in the UN/CEFACT Transparency Protocol and related initiatives, such as the euBusinessGraph data model.
-Identifier schemes are therefore defined as independent resources that can be referenced across vocabularies and domains, allowing common identification systems to be reused consistently without duplication.
-</p>
-
-<p>
-By clarifying the relationship between identifiers and identifier schemes, this vocabulary supports semantically correct identification across the SEMIC ecosystem.
-Domain vocabularies can continue to state that an entity has one or more identifiers, while relying on shared identifier scheme definitions to provide their meaning, governance, and characteristics in a consistent and interoperable manner.
-</p>
-<section id="specterminology-core">
-<h2>Terminology</h2>
-<h3>Used Prefixes</h3>
-        <table id="table-namespaces" class="simple">
-            <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
-            <tbody>
-            <tr><td><code>adms</code></td><td><code>http://www.w3.org/ns/adms#</code></td></tr>
-            <tr><td><code>dcat</code></td><td><code>http://www.w3.org/ns/dcat#</code></td></tr>
-            <tr><td><code>dcterms</code></td><td><code>http://purl.org/dc/terms/</code></td></tr>
-            <tr><td><code>foaf</code></td><td><code>http://xmlns.com/foaf/0.1/</code></td></tr>
-            <tr><td><code>owl</code></td><td><code>http://www.w3.org/2002/07/owl#</code></td></tr>
-            <tr><td><code>rdf</code></td><td><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></td></tr>
-            <tr><td><code>rdfs</code></td><td><code>http://www.w3.org/2000/01/rdf-schema#</code></td></tr>
-            <tr><td><code>skos</code></td><td><code>http://www.w3.org/2004/02/skos/core#</code></td></tr>
-            <tr><td><code>vcard</code></td><td><code>http://www.w3.org/2006/vcard/ns#</code></td></tr>
-            <tr><td><code>xsd</code></td><td><code>http://www.w3.org/2001/XMLSchema#</code></td></tr>
-            <tr><td><code>xvh</code></td><td><code>http://www.w3.org/1999/xhtml/vocab#</code></td></tr>
-            </tbody>
-        </table>
-</section>
 
 
-<section id="specoverview">
-    <h2>Overview</h2> 
-    <div id="overview">
-                
-                        <p>
-                            This document describes the usage of the following main entities for a correct usage of the Application Profile:
-                            <br />
-                            |
-                        </p>
-                        <p>
-                            The main entities are supported by:
-                            <br />
-                            |
-			      <a href="#Agent">Agent</a> |
-			      <a href="#Identifier">Identifier</a> |
-			      <a href="#IdentifierSchema">Identifier Schema</a> |
-                        </p>
-                
-                
-                        <p>
-                            And supported by these datatypes:
-                            <br />
-                            | <a href="#Date">Date</a> | <a href="#Literal">Literal</a> | <a href="#Text">Text</a> |
-                        </p>
-                
-    </div>
-    <div>
-        <a href="/ADMS/releases/draft/2.0.1/html/overviewcorevocs.jpg"
-           target="_blank">
-            <img src="/ADMS/releases/draft/2.0.1/html/overviewcorevocs.jpg"/>
-        </a>
-    </div>
-</section>
-
-
-<section>  
-<h2>Main Entities</h2>
-The main entities are those that form the core of the Application Profile.
-</section>
-<section>
-<h2>
-   Supportive Entities
-</h2>
-The supportive entities are supporting the main entities in the Application Profile. 
-They are included in the Application Profile because they form the range of properties.
-        <section>
-            <h3 id="Agent">
-                <a href="http://xmlns.com/foaf/0.1/Agent"
-                   data-toggle="tooltip"
-                   data-content="http://xmlns.com/foaf/0.1/Agent"
-                   data-placement="right">Agent</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-                <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Agent&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    Entity that is able to carry out action.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        In compliance with the description from <a href="http://xmlns.com/foaf/spec/">FOAF</a>, an Agent is considered as any entity that is able to carry out actions. The Agent class acts as a generic element which can be further specified by implementers for their usages, for example by defining the Person class from <a href="https://github.com/SEMICeu/Core-Person-Vocabulary">the Core Person Vocabulary</a> or Organization from <a href="https://www.w3.org/TR/vocab-org/">W3C's Organization Ontology</a> as a subclasses of Agent. This Person or Organization can then issue a certain Requirement or be concerned by an Evidence provided.
-                    </dd>
-                
-                
-                <dt>
-                    Properties
-                </dt>
-                
-                    <dd>
-                        For this entity the following properties are defined: <a href="#Agent.issuedby">issued by</a>
-                        .
-                    </dd>
-                
-            </dl>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Agent.issuedby"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/creator"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20issued by%20in%20Agent&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23Agent.issuedby" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/creator"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/creator"
-                                           data-placement="right">
-                                        issued by</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Identifier" data-placement="right">Identifier</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Agent legally responsible for the Identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-</section>
-
-        <section>
-            <h3 id="Identifier">
-                <a href="http://www.w3.org/ns/adms#Identifier"
-                   data-toggle="tooltip"
-                   data-content="http://www.w3.org/ns/adms#Identifier"
-                   data-placement="right">Identifier</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-                <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Identifier&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    A structured reference that identifies an entity.
-                </dd>
-                
-                
-                    <dt>
-                        Usage Note
-                    </dt>
-                    <dd>
-                        The Identifier class is based on the <a href="https://www.gs1.org/standards/edi/gs1-un-cefact-xml/2012">UN/CEFACT</a> class of the same name and is defined under the ADMS namespace.
-                    </dd>
-                
-                
-                <dt>
-                    Properties
-                </dt>
-                
-                    <dd>
-                        For this entity the following properties are defined: <a href="#Identifier.dateissued">date issued</a>
-                        , <a href="#Identifier.notation">notation</a>
-                        , <a href="#Identifier.schema">schema</a>
-                        , <a href="#Identifier.schemaagency">schema agency</a>
-                        .
-                    </dd>
-                
-            </dl>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="Identifier.dateissued"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/issued"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20date issued%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23Identifier.dateissued" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/issued"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/issued"
-                                           data-placement="right">
-                                        date issued</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Date" data-placement="right">Date</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Date of formal issuance of the identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Identifier.notation"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/2004/02/skos/core#notation"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20notation%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23Identifier.notation" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/2004/02/skos/core#notation"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/2004/02/skos/core#notation"
-                                           data-placement="right">
-                                        notation</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    A string of characters to uniquely identify an identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Identifier.schema"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/conformsTo"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20schema%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23Identifier.schema" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/conformsTo"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/conformsTo"
-                                           data-placement="right">
-                                        schema</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#IdentifierSchema" data-placement="right">Identifier Schema</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The schema used to construct the identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                            <tr id="Identifier.schemaagency"
-                                typeof="rdfs:Property"
-                                resource="http://www.w3.org/ns/adms#schemaAgency"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20schema agency%20in%20Identifier&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23Identifier.schemaagency" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://www.w3.org/ns/adms#schemaAgency"
-                                           data-toggle="tooltip"
-                                           data-content="http://www.w3.org/ns/adms#schemaAgency"
-                                           data-placement="right">
-                                        schema agency</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Literal" data-placement="right">Literal</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    The name of the agency that issued the identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal.
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-</section>
-
-
-
-
-
-   
-        <section>
-            <h3 id="IdentifierSchema">
-                <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme"
-                   data-toggle="tooltip"
-                   data-content="http://www.w3.org/2004/02/skos/core#ConceptScheme"
-                   data-placement="right">Identifier Schema</a>
-
-            </h3>
-	        <!-- XXX an image in the h3 will break the rendering of the Table Of Contents of Respec -->
-                <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20IdentifierSchema&body=Explain%20your%20issue"}}>
-                   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
-		</a>
-            <dl>
-                <dt>
-                    Definition
-                </dt>
-                <dd>
-                    The schema used to assign and manage an identifier to an entity.
-                </dd>
-                
-                
-                
-                <dt>
-                    Properties
-                </dt>
-                
-                    <dd>
-                        For this entity the following properties are defined: <a href="#IdentifierSchema.schemaname">schema name</a>
-                        .
-                    </dd>
-                
-            </dl>
-        
-            <div class="u-table-overflow">
-                <table class="data-table simple" id="table-mandatory-classes">
-                    <thead>
-                        <tr class="data-table__header">
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                            </th>
-                            <th class="data-table__header-title--sortable data-table__header-title--sortable-active" style="width:12%">
-                                Property
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:12%">
-                                Range
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:6%">
-                                Card
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Definition 
-                            </th>
-                            <th class="data-table__header-title--sortable" style="width:30%">
-                                Usage
-                            </th>
-			    <!--
-                            <th class="data-table__header-title--sortable" style="width:3%">
-                                Codelist
-                            </th>
-			    -->
-                            <th class="data-table__header-title--sortable" style="width:5%">
-                                DCAT
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="supertype">
-                        
-                            <tr id="IdentifierSchema.schemaname"
-                                typeof="rdfs:Property"
-                                resource="http://purl.org/dc/terms/title"
-                                class="class mandatory">
-                                <td>
-				    <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20schema name%20in%20Identifier Schema&body=Explain%20your%20issue%20for%20https://semiceu.github.io/ADMS/corevocs/releases/1.0.0%23IdentifierSchema.schemaname" target="_blank" rel="noopener noreferrer" >
-					    <!--                                        <i class="icon">[o]</i> -->
-                                        <img src="html/callout.png" loading="lazy" alt="[o]" width="100" height="100"/>
-                                    </a>
-                                </td>
-                                <td>
-                                        <a href="http://purl.org/dc/terms/title"
-                                           data-toggle="tooltip"
-                                           data-content="http://purl.org/dc/terms/title"
-                                           data-placement="right">
-                                        schema name</a>
-                                </td>
-                                <td>
-                                    
-                                        
-                                            <a href="#Text" data-placement="right">Text</a>
-                                        
-                                    
-                                </td>
-                                <td>
-                                    0..*
-                                </td>
-                                <td property="rdfs:comment">
-                                    Name of the schema used to construct the identifier.
-                                </td>
-                                <td property="skos:scopeNote">
-                                    
-                                </td>
-				<!--
-                                <td>
-                                    
-                                </td>
-				-->
-                                <td>
-                                    
-                                </td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
-        
-</section>
-
-
-
-
-
-</section>
-
-    <section>
-        <h2>
-            Datatypes
-        </h2>
-
-	The following datatypes are used within this specification.
-
-	<table class="data-table simple" id="table-mandatory-classes">
-	    <thead>
-		<tr class="data-table__header">
-		    <th class="data-table__header-title--sortable">
-		    </th>
-		    <th class="data-table__header-title--sortable data-table__header-title--sortable-active">
-			Class
-		    </th>
-		    <th class="data-table__header-title--sortable">
-			Definition
-		    </th>
-		</tr>
-	    </thead>
-	    <tbody class="supertype">
-            
-		<tr><td>
-                   <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Date&body=Explain%20your%20issue"}}>
-                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
-		   </a>
-		</td><td>
-                
-                    <div id="Date">
-                        <a href="http://www.w3.org/2001/XMLSchema#date"
-                           data-toggle="tooltip"
-                           data-content="http://www.w3.org/2001/XMLSchema#date"
-                           data-placement="right">Date</a>
-                    </div>
-                
-		</td><td>
-                    Date represents top-open intervals of exactly one day in length on the timelines of dateTime, beginning on the beginning moment of each day, up to but not including the beginning moment of the next day).  For non-timezoned values, the top-open intervals disjointly cover the non-timezoned timeline, one per day.  For timezoned values, the intervals begin at every minute and therefore overlap.
-		</td></tr>
-		<tr><td>
-                   <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Literal&body=Explain%20your%20issue"}}>
-                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
-		   </a>
-		</td><td>
-                
-                    <div id="Literal">
-                        <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
-                           data-toggle="tooltip"
-                           data-content="http://www.w3.org/2000/01/rdf-schema#Literal"
-                           data-placement="right">Literal</a>
-                    </div>
-                
-		</td><td>
-                    The class of literal values, eg. textual strings and integers.
-		</td></tr>
-		<tr><td>
-                   <a href="https://github.com/SEMICeu/ADMS/issues/new?title=Issue%20for%20Text&body=Explain%20your%20issue"}}>
-                     <img src="html/callout.png" loading="lazy" alt="(create issue)" width="50" height="50"/>
-		   </a>
-		</td><td>
-                
-                    <div id="Text">
-                        <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                           data-toggle="tooltip"
-                           data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-                           data-placement="right">Text</a>
-                    </div>
-                
-		</td><td>
-                    The text data type is a combination of a string and a language identifier.
-		</td></tr>
-            </tbody>
-	</table>
-
-
-</section>
 
 <section class="appendix">
 
@@ -4542,6 +3869,9 @@ Past and current contributors are :
 	 	Eugeniu Costetchi
 		, 
            
+	 	Makx Dekkers
+		, 
+           
 	 	Pascal Derycke
 		, 
            
@@ -4549,6 +3879,9 @@ Past and current contributors are :
 		, 
            
 	 	Petro Dudi
+		, 
+           
+	 	Pavlina Fragkou
 		, 
            
 	 	Ana Rosa Guzmán
@@ -4740,5 +4073,28 @@ Additionally the editors and authors like to thank the assistence of W3C, especi
 		background-color:dodgerblue;
 		color:white;
 	}
+	table.simple {                                                                      
+                  font-size: small;                                                           
+                          border-spacing:0;                                                   
+                          border-collapse:collapse;                                           
+                          border-bottom:3px solid #005a9c                                     
+        }                                                                                   
+        .simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}           
+        .simple th a{color:#fff;padding:3px 5px;text-align:left}                            
+        .simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}   
+        .simple td{padding:3px 10px;border-top:1px solid #ddd}                              
+        .simple tr:nth-child(even){background:#f0f6ff}
+    body.darkmode .simple th{background:#005a9c94;color:#ddd}
+	body.darkmode .simple th a{color:#ddd}
+	body.darkmode .simple tr:nth-child(even){background:#f0f6ff26}
+    body.darkmode :is(h4,h5,h6)+a.self-link::before {
+        color: var(--heading-text);
+    }
+    body.darkmode img {
+        background: none;
+    }
+    body.darkmode section#references :target {
+        background: #04162d;
+    }
   </style>
 </html>

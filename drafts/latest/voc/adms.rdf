@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:ns0="http://www.w3.org/2001/02pd/rec54#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#" xmlns:schemas="https://schema.org/">
+  <owl:Class rdf:about="http://www.w3.org/ns/adms#AssetDistribution">
+    <rdfs:isDefinedBy>
+      <owl:Ontology rdf:about="http://www.w3.org/ns/adms">
+        <dc:mediator>
+          <rdf:Description rdf:nodeID="g462660">
+            <foaf:homepage rdf:resource="https://semic.eu"/>
+            <foaf:name>Semantic Interoperability Community (SEMIC)</foaf:name>
+          </rdf:Description>
+        </dc:mediator>
+        <rdfs:label xml:lang="en">adms</rdfs:label>
+        <rdfs:label xml:lang="nl">adms</rdfs:label>
+        <foaf:maker>
+          <foaf:Person rdf:nodeID="g462680">
+            <schemas:affiliation>
+              <rdf:Description rdf:nodeID="g462700">
+                <foaf:name>Digitaal Vlaanderen</foaf:name>
+              </rdf:Description>
+            </schemas:affiliation>
+            <foaf:firstName>Bert</foaf:firstName>
+            <foaf:lastName>Van Nuffelen</foaf:lastName>
+            <foaf:mbox rdf:resource="mailto:bert.van.nuffelen@tenforce.com"/>
+          </foaf:Person>
+        </foaf:maker>
+        <ns0:editor>
+          <foaf:Person rdf:nodeID="g462720">
+            <schemas:affiliation>
+              <rdf:Description rdf:nodeID="g462740">
+                <foaf:name>PwC EU Services</foaf:name>
+              </rdf:Description>
+            </schemas:affiliation>
+            <foaf:firstName>Jitse</foaf:firstName>
+            <foaf:lastName>De Cock</foaf:lastName>
+          </foaf:Person>
+        </ns0:editor>
+        <ns0:editor>
+          <foaf:Person rdf:nodeID="g462760">
+            <schemas:affiliation>
+              <rdf:Description rdf:nodeID="g462780">
+                <foaf:name>PwC EU Services</foaf:name>
+              </rdf:Description>
+            </schemas:affiliation>
+            <foaf:firstName>Faruk</foaf:firstName>
+            <foaf:lastName>Karabulut</foaf:lastName>
+          </foaf:Person>
+        </ns0:editor>
+        <ns0:editor>
+          <foaf:Person rdf:nodeID="g462800">
+            <schemas:affiliation>
+              <rdf:Description rdf:nodeID="g462820">
+                <foaf:name>EC</foaf:name>
+              </rdf:Description>
+            </schemas:affiliation>
+            <foaf:firstName>Natasa</foaf:firstName>
+            <foaf:lastName>Sofou</foaf:lastName>
+          </foaf:Person>
+        </ns0:editor>
+        <ns0:editor>
+          <foaf:Person rdf:nodeID="g462840">
+            <schemas:affiliation>
+              <rdf:Description rdf:nodeID="g462860">
+                <foaf:name>PwC EU Services</foaf:name>
+              </rdf:Description>
+            </schemas:affiliation>
+            <foaf:firstName>Emidio</foaf:firstName>
+            <foaf:lastName>Stani</foaf:lastName>
+          </foaf:Person>
+        </ns0:editor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462880">
+            <foaf:firstName>Alberto</foaf:firstName>
+            <foaf:lastName>Abella</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462900">
+            <foaf:firstName>Riitta</foaf:firstName>
+            <foaf:lastName>Alkula</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462920">
+            <foaf:firstName>Peter</foaf:firstName>
+            <foaf:lastName>Bruhn Andersen</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462940">
+            <foaf:firstName>Ales</foaf:firstName>
+            <foaf:lastName>Cernivec</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462960">
+            <foaf:firstName>Eugeniu</foaf:firstName>
+            <foaf:lastName>Costetchi</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g462980">
+            <foaf:firstName>Makx</foaf:firstName>
+            <foaf:lastName>Dekkers</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463000">
+            <foaf:firstName>Pascal</foaf:firstName>
+            <foaf:lastName>Derycke</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463020">
+            <foaf:firstName>Ilias</foaf:firstName>
+            <foaf:lastName>Dimopoulos</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463040">
+            <foaf:firstName>Petro</foaf:firstName>
+            <foaf:lastName>Dudi</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463060">
+            <foaf:firstName>Pavlina</foaf:firstName>
+            <foaf:lastName>Fragkou</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463080">
+            <foaf:firstName>Ana Rosa</foaf:firstName>
+            <foaf:lastName>Guzmán</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463100">
+            <foaf:firstName>Irène</foaf:firstName>
+            <foaf:lastName>Kesisoglou</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463120">
+            <foaf:firstName>Touré</foaf:firstName>
+            <foaf:lastName>Lanciné</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463140">
+            <foaf:firstName>Giorgia</foaf:firstName>
+            <foaf:lastName>Lodi</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463160">
+            <foaf:firstName>Peter</foaf:firstName>
+            <foaf:lastName>Lubrich</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463180">
+            <foaf:firstName>Italo</foaf:firstName>
+            <foaf:lastName>Mairo</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463200">
+            <foaf:firstName>Thies</foaf:firstName>
+            <foaf:lastName>Mesdag</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463220">
+            <foaf:firstName>Joachim</foaf:firstName>
+            <foaf:lastName>Nielandt</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463240">
+            <foaf:firstName>Geraldine</foaf:firstName>
+            <foaf:lastName>Nolf</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463260">
+            <foaf:firstName>Csongor</foaf:firstName>
+            <foaf:lastName>Nyulas</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463280">
+            <foaf:firstName>Hans</foaf:firstName>
+            <foaf:lastName>Overbeeck</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463300">
+            <foaf:firstName>Matthias</foaf:firstName>
+            <foaf:lastName>Palmér</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463320">
+            <foaf:firstName>Mihai</foaf:firstName>
+            <foaf:lastName>Paunescu</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463340">
+            <foaf:firstName>Hector</foaf:firstName>
+            <foaf:lastName>Rico Lorenzo</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463360">
+            <foaf:firstName>Ludger</foaf:firstName>
+            <foaf:lastName>Rinsche</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463380">
+            <foaf:firstName>Fidel</foaf:firstName>
+            <foaf:lastName>Santiago</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463400">
+            <foaf:firstName>Mantas</foaf:firstName>
+            <foaf:lastName>Sekmokas</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463420">
+            <foaf:firstName>Enric</foaf:firstName>
+            <foaf:lastName>Staromiejski</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463440">
+            <foaf:firstName>Kees</foaf:firstName>
+            <foaf:lastName>Trautwein</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463460">
+            <foaf:firstName>William</foaf:firstName>
+            <foaf:lastName>Verbeeck</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463480">
+            <foaf:firstName>Jim</foaf:firstName>
+            <foaf:lastName>Yang</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person rdf:nodeID="g463500">
+            <foaf:firstName>Willem</foaf:firstName>
+            <foaf:lastName>van Gemert</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dc:issued>2026-05-18</dc:issued>
+      </owl:Ontology>
+    </rdfs:isDefinedBy>
+    <rdfs:label xml:lang="en">Asset Distribution</rdfs:label>
+    <rdfs:comment xml:lang="en">A particular physical embodiment of an Asset, which is an example of the FRBR entity manifestation (the physical embodiment of an expression of a work).</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/ns/adms#AssetRepository">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">Asset repository</rdfs:label>
+    <rdfs:comment xml:lang="en">A system or service that provides facilities for storage and maintenance of descriptions of Assets and Asset Distributions, and functionality that allows users to search and access these descriptions. An Asset Repository will typically contain descriptions of several Assets and related Asset Distributions.</rdfs:comment>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#identifier">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a resource to an adms:Identifier class.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range>
+      <owl:Class rdf:about="http://www.w3.org/ns/adms#Identifier">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <rdfs:comment xml:lang="en">This is based on the UN/CEFACT Identifier class.</rdfs:comment>
+        <skos:scopeNote xml:lang="en">An identifier in a particular context, consisting of the 
+&lt;ul&gt;
+&lt;li&gt;content string that is the identifier;&lt;/li&gt;
+&lt;li&gt;an optional identifier for the identifier scheme; &lt;/li&gt;
+&lt;li&gt;an optional identifier for the version of the identifier scheme;&lt;/li&gt;
+&lt;li&gt;an optional identifier for the agency that manages the identifier scheme.&lt;/li&gt;</skos:scopeNote>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#includedAsset">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">included asset</rdfs:label>
+    <rdfs:comment xml:lang="en">An Asset that is contained in the Asset being described, e.g. when there are several vocabularies defined in a single document.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class rdf:about="http://www.w3.org/ns/adms#Asset">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <rdfs:comment xml:lang="en">An abstract entity that reflects the intellectual content of the asset and represents those characteristics of the asset that are independent of its physical embodiment. This abstract entity combines the FRBR entities work (a distinct intellectual or artistic creation) and expression (the intellectual or artistic realization of a work).</rdfs:comment>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#interoperabilityLevel">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">interoperability level</rdfs:label>
+    <rdfs:comment xml:lang="en">The interoperability level for which the Asset is relevant.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#last">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">last</rdfs:label>
+    <rdfs:comment xml:lang="en">A link to the current or latest version of the Asset.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#last"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#next">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">next</rdfs:label>
+    <rdfs:comment xml:lang="en">A link to the next version of the Asset.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#next"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#prev">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">prev</rdfs:label>
+    <rdfs:comment xml:lang="en">A link to the previous version of the Asset.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/xhtml/vocab#prev"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#representationTechnique">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">representation technique</rdfs:label>
+    <rdfs:comment xml:lang="en">More information about the format in which an Asset Distribution is released. This is different from the file format as, for example, a ZIP file (file format) could contain an XML schema (representation technique).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#sample">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">sample</rdfs:label>
+    <rdfs:comment xml:lang="en">Links to a sample of an Asset (which is itself an Asset).</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/adms#schemaAgency">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">schema agency</rdfs:label>
+    <rdfs:comment xml:lang="en">The name of the agency that issued the identifier.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#status">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">status</rdfs:label>
+    <rdfs:comment xml:lang="en">The status of the Asset in the context of a particular workflow process.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#supportedSchema">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">supported schema</rdfs:label>
+    <rdfs:comment xml:lang="en">A schema according to which the Asset Repository can provide data about its content, e.g. ADMS.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.w3.org/ns/adms#translation">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">translation</rdfs:label>
+    <rdfs:comment xml:lang="en">Links Assets that are translations of each other.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/adms#versionNotes">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/adms"/>
+    <rdfs:label xml:lang="en">version notes</rdfs:label>
+    <rdfs:comment xml:lang="en">A description of changes between this version and the previous version of the Asset.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
